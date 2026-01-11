@@ -21,7 +21,17 @@ test_shell () {
         RUN_COUNT=$((RUN_COUNT + 1))
         . "${TEST_ENV}"
         cd "$ROOT_DIR"
-        /bin/env -i PATH= $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
+        case "$TEST_SHELL" in
+            # yash has some weird behavior that makes builtins unavailable if
+            # they don't exist in the PATH, so we need to set it for true, test, printf
+            # etc even though the internal builtin version is used anyway. Annoying.
+            *yash*)
+                /bin/env -i PATH=/bin $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
+                ;;
+            *)
+                /bin/env -i PATH= $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
+                ;;
+        esac
 
         if /bin/diff -u "${TEST_EXPECTED}" "${TEST_OUTPUT}"
         then
