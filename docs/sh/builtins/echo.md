@@ -14,7 +14,7 @@ echo
 Basic Usage
 -----------
 
-When no options are given, **echo** writes arguments followed by a new line:
+When no options are given, **echo** writes arguments followed by a newline:
 
 Example:
 
@@ -27,7 +27,7 @@ Output:
 Option: -n
 ----------
 
-> does not write a new line at the end
+> does not write a newline at the end
 
 Example:
 
@@ -55,7 +55,7 @@ Output:
 Option: -E
 ----------
 
-> explicitly DO NOT expand escape sequences in arguments
+> explicitly does not expand escape sequences in arguments
 
 Example:
 

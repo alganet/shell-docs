@@ -17,7 +17,7 @@ Check the [echo builtin](docs/sh/builtins/echo.md) document for an example.
 
 ## Development
 
-Whole workflow:
+Whole workflow (process docs, run tests, regenerate compat tables)
 
     rm -Rf tests/ compat/ results && sh gen_tests.sh && sh container.sh && sh gen_compat.sh && sh regen_docs.sh 
 
