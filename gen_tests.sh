@@ -12,7 +12,6 @@ ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
 
 /bin/find docs -name '*.md' | /bin/sort | {
     test_no=1
-    max_header_length=0
 
     while read -r md_file
     do
@@ -24,6 +23,7 @@ ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
         current_h2=''
         current_h2_line=0
         example_line=0
+        max_header_length=0
 
         while read -r md_line
         do
