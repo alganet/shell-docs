@@ -11,6 +11,10 @@ continue
 
 - **continue** [_level_]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#continue)
+
 Basic Usage
 -----------
 

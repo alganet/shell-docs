@@ -11,6 +11,10 @@ return
 
 - **return** [_exit_code_]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#return)
+
 Basic Usage
 -----------
 

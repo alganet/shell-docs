@@ -11,6 +11,10 @@ alias
 
 - **alias** [-p] [_alias-name_=[_string_] ...]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/alias.html)
+
 Basic Usage
 -----------
 

@@ -11,6 +11,10 @@ read
 
 - **read** [_name_]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/read.html)
+
 Basic Usage
 -----------
 

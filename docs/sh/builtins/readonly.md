@@ -11,6 +11,10 @@ readonly
 
 - **readonly** _name_[=_value_]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#readonly)
+
 Basic Usage
 -----------
 

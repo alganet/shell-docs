@@ -11,6 +11,10 @@ echo
 
 - **echo** [-neE] [_string_...]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/echo.html)
+
 Basic Usage
 -----------
 

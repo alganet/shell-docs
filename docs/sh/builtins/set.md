@@ -11,6 +11,10 @@ set
 
 - **set**
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#set)
+
 Basic Usage
 -----------
 

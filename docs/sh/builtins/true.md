@@ -11,6 +11,10 @@ true
 
 - **true**
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/true.html)
+
 Basic Usage
 -----------
 

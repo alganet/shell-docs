@@ -11,6 +11,10 @@ command
 
 - **command** [-v] [_name_...]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/command.html)
+
 Basic Usage
 -----------
 

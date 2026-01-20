@@ -9,7 +9,11 @@ false
 
 > sets the exit code to 1 (generic error)
 
-- **true**
+- **false**
+
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/false.html)
 
 Basic Usage
 -----------

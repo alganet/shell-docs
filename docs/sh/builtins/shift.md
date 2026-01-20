@@ -11,6 +11,10 @@ shift
 
 - **shift** [_count_=1]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#shift)
+
 Basic Usage
 -----------
 

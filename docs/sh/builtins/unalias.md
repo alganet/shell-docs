@@ -11,6 +11,10 @@ unset
 
 - **unalias** _name_ [_name_...]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/unalias.html)
+
 Basic Usage
 -----------
 

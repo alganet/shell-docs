@@ -11,6 +11,10 @@ break
 
 - **break** [_level_]
 
+---
+
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#break)
+
 Basic Usage
 -----------
 
