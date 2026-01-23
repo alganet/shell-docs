@@ -40,9 +40,8 @@ Example:
     alias my_alias1='echo 123'
     alias my_alias2='echo 456'
     alias -p |
-        while read -r aliasp
-        do case $aliasp in *my_alias*) echo "$aliasp";; esac
-        done
+        /bin/grep my_alias |
+        /bin/sort
 
 Output:
 
