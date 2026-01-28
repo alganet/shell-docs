@@ -122,10 +122,6 @@
 /opt/posh_0.12.6/bin/posh
 /opt/posh_0.13.2/bin/posh
 /opt/posh_0.14.2/bin/posh
-/opt/yash_2.41/bin/yash
-/opt/yash_2.42/bin/yash
-/opt/yash_2.43/bin/yash
-/opt/yash_2.44/bin/yash
 /opt/yash_2.45/bin/yash
 /opt/yash_2.46/bin/yash
 /opt/yash_2.47/bin/yash
