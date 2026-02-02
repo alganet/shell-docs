@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2026 Alexandre Gomes Gaigalas <alganet@gmail.com>
+#
+# SPDX-License-Identifier: ISC
+
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - run: sh gen_tests.sh
+      - run: sh container.sh
+      - run: sh gen_compat.sh
+      - run: sh regen_docs.sh
+
+      - name: Pass (regen docs === committed docs)
+        run: git diff --exit-code docs
