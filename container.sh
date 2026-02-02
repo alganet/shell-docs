@@ -11,7 +11,7 @@ container_run () {
     /bin/rm -rf "$ROOT_DIR/results"
     /bin/mkdir -p "$ROOT_DIR/results"
 
-    docker run -it --rm \
+    docker run --rm \
         -v"${PWD}/container_shells.txt:/wdir/container_shells.txt" \
         -v"${PWD}/container.sh:/wdir/container.sh" \
         -v"${PWD}/results:/wdir/results" \
