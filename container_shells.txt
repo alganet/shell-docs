@@ -23,7 +23,7 @@
 /opt/bash_5.0.18/bin/bash
 /opt/bash_5.1.16/bin/bash
 /opt/bash_5.2.37/bin/bash
-/opt/bash_5.3.8/bin/bash
+/opt/bash_5.3.9/bin/bash
 /opt/brush_0.2.23/bin/brush
 /opt/brush_0.3.0/bin/brush
 /opt/dash_0.5.10.2/bin/dash
@@ -121,7 +121,7 @@
 /opt/osh_0.36.0/bin/osh
 /opt/posh_0.12.6/bin/posh
 /opt/posh_0.13.2/bin/posh
-/opt/posh_0.14.2/bin/posh
+/opt/posh_0.14.3/bin/posh
 /opt/yash_2.45/bin/yash
 /opt/yash_2.46/bin/yash
 /opt/yash_2.47/bin/yash
@@ -138,8 +138,6 @@
 /opt/yash_2.58.1/bin/yash
 /opt/yash_2.59/bin/yash
 /opt/yash_2.60/bin/yash
-/opt/yashrs_0.3.0/bin/yash3
-/opt/yashrs_0.4.0/bin/yash3
 /opt/yashrs_0.4.5/bin/yash3
 /opt/yashrs_3.0.4/bin/yash3
 /opt/zsh_4.2.7/bin/zsh
