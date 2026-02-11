@@ -20,14 +20,12 @@ Basic Usage
 
 Example:
 
-    { /bin/sleep 1 && echo 1; } &
-    { /bin/sleep 2 && echo 2; } &
+    { echo 1; } &
     wait
 
 Output:
 
     1
-    2
 
 Compatibility
 -------------
