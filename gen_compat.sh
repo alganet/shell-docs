@@ -106,7 +106,7 @@ find "$ROOT_DIR/compat/tap" -type f -name "*vars.env" | {
                 /bin/cat ${vars_file%"vars.env"}/passed.txt |
                     /bin/sed -n "s/^${tap_shell}_//p" |
                     /bin/cut -d_ -f2 | 
-                    /bin/sort -u |
+                    /bin/sort -V -u |
                     /bin/head -n1
             done | /bin/tr '\n' ' '
         )"
@@ -130,7 +130,7 @@ find "$ROOT_DIR/compat/tap" -type f -name "*vars.env" | {
         shell_versions="$(/bin/find "${ROOT_DIR}/results/opt" -mindepth 2 -maxdepth 2 -type d |
             /bin/sed -n "s/^.*\/${shell_name}_//p" |
             /bin/cut -d'/' -f1 | 
-            /bin/sort -u |
+            /bin/sort -V -u |
             /bin/tr '\n' ' '
         )"
         max_version_length=${#shell_name}
