@@ -18,6 +18,8 @@ command
 Basic Usage
 -----------
 
+`command` without any options invoke its parameters as a command:
+
 Example:
 
     command echo 123
