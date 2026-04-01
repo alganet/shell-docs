@@ -35,6 +35,9 @@ Output:
 Partial Aliasing
 ----------------
 
+Some shells have the ability to declare partial aliases, with incomplete shell
+commands that are completed once the shell executes:
+
 Example:
 
     shopt -s expand_aliases >/dev/null 2>&1 # bash requires this
