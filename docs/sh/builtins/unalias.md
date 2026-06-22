@@ -20,7 +20,7 @@ Basic Usage
 
 Example:
 
-    shopt -s expand_aliases >/dev/null 2>&1 # bash requires this
+    [ -n "${BASH_VERSION:-}" ] && shopt -s expand_aliases # bash requires this
     alias my_alias1='echo 123'
     my_alias1
     unalias my_alias1
@@ -36,6 +36,6 @@ Output:
 Compatibility
 -------------
 
-| Feature       | ash      | bash       | brush    | dash       | hush     | ksh                         | loksh   | mksh   | oksh    | osh      | posh     | yash     | yashrs   | zsh     |
-|:-------------:|:--------:|:----------:|:--------:|:----------:|:--------:|:---------------------------:|:-------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:-------:|
-| Basic Usage   | >=1.27.2 | >=2.05b.13 | >=0.2.23 | >=0.5.5.1  | -        | >=2007-01-11                | >=6.7.5 | >=R45  | >=6.5   | >=0.25.0 | -        | >=2.45   | >=0.4.5  | >=4.2.7 |
+| Feature       | ash       | bash       | brush    | dash       | hush      | ksh                         | loksh   | mksh   | oksh    | osh      | posh     | yash     | yashrs   | zsh     |
+|:-------------:|:---------:|:----------:|:--------:|:----------:|:---------:|:---------------------------:|:-------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:-------:|
+| Basic Usage   | >=1.27.2  | >=2.04.0   | >=0.2.23 | >=0.5.3    | -         | >=2007-01-11                | >=6.7.5 | >=R30  | >=6.5   | >=0.25.0 | -        | >=2.22   | >=0.3.0  | >=4.0.9 |

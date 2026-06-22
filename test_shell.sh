@@ -6,10 +6,18 @@
 
 set -euf
 
-ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
-TEST_LIST="$(/bin/find "${ROOT_DIR}/tests" -name '*vars.env' | /bin/sort)"
-TEST_COUNT="$(echo "$TEST_LIST" | /bin/wc -l)"
-TEST_SHELL="${TEST_SHELL:-${SHELL:-/bin/sh}}"
+DIRNAME="$(command -v dirname)"
+FIND="$(command -v find)"
+SORT="$(command -v sort)"
+WC="$(command -v wc)"
+ENV="$(command -v env)"
+DIFF="$(command -v diff)"
+SH="$(command -v sh)"
+
+ROOT_DIR="$(cd "$("$DIRNAME" "$0")" && pwd)"
+TEST_LIST="$("$FIND" "${ROOT_DIR}/tests" -name '*vars.env' | "$SORT")"
+TEST_COUNT="$(echo "$TEST_LIST" | "$WC" -l)"
+TEST_SHELL="${TEST_SHELL:-${SHELL:-$SH}}"
 
 test_shell () {
     RUN_COUNT=0
@@ -26,14 +34,14 @@ test_shell () {
             # they don't exist in the PATH, so we need to set it for true, test, printf
             # etc even though the internal builtin version is used anyway. Annoying.
             *yash*)
-                /bin/env -i PATH=/bin $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
+                "$ENV" -i PATH=/bin $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
                 ;;
             *)
-                /bin/env -i PATH= $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
+                "$ENV" -i PATH= $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
                 ;;
         esac
 
-        if /bin/diff -u "${TEST_EXPECTED}" "${TEST_OUTPUT}"
+        if "$DIFF" -u "${TEST_EXPECTED}" "${TEST_OUTPUT}"
         then
             printf 'ok'
             PASS_COUNT=$((PASS_COUNT + 1))

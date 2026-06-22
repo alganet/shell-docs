@@ -8,9 +8,15 @@ _EOL='
 '
 IFS=
 
-ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
+DIRNAME="$(command -v dirname)"
+FIND="$(command -v find)"
+SORT="$(command -v sort)"
+CAT="$(command -v cat)"
+MV="$(command -v mv)"
 
-/bin/find docs -name '*.md' | /bin/sort | {
+ROOT_DIR="$(cd "$("$DIRNAME" "$0")" && pwd)"
+
+"$FIND" docs -name '*.md' | "$SORT" | {
     test_no=1
     max_header_length=0
 
@@ -23,7 +29,7 @@ ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
         while read -r md_line
         do
             line_no=$((line_no + 1))
-            
+
             if
                 test -n "$md_line" &&
                 test -z "${md_line##-*}" &&
@@ -33,7 +39,7 @@ ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
                 case $last_line in
                     'Compatibility')
                         last_line=
-                        /bin/cat "${ROOT_DIR}/compat/${md_file#${ROOT_DIR}/docs/}"
+                        "$CAT" "${ROOT_DIR}/compat/${md_file#${ROOT_DIR}/docs/}"
                         break
                         ;;
                 esac
@@ -44,6 +50,6 @@ ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
             last_line="$md_line"
         done < "$md_file" > "$md_file.new"
         printf '%s' "$last_line" >> "$md_file.new"
-        /bin/mv -f "$md_file.new" "$md_file"
+        "$MV" -f "$md_file.new" "$md_file"
     done
 }

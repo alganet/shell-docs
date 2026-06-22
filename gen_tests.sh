@@ -8,9 +8,14 @@ _EOL='
 '
 IFS=
 
-ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
+DIRNAME="$(command -v dirname)"
+FIND="$(command -v find)"
+SORT="$(command -v sort)"
+MKDIR="$(command -v mkdir)"
 
-/bin/find docs -name '*.md' | /bin/sort | {
+ROOT_DIR="$(cd "$("$DIRNAME" "$0")" && pwd)"
+
+"$FIND" docs -name '*.md' | "$SORT" | {
     test_no=1
 
     while read -r md_file
@@ -39,22 +44,22 @@ ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
                 '')
                     case "$section" in
                         example)
-                            case "$example" in 
+                            case "$example" in
                                 '')
                                     ;;
                                 *)
                                     section=''
-                                    ;; 
+                                    ;;
                             esac
                             ;;
                         output)
-                            case "$output" in 
+                            case "$output" in
                                 '')
                                     ;;
                                 *)
                                     test_nopad=$(printf "%04d\n" $test_no)
                                     test_dir="tests/$test_nopad"
-                                    mkdir -p "$test_dir"
+                                    "$MKDIR" -p "$test_dir"
 
                                     {
                                         echo "TEST_DOC_FILE='$md_file'"
@@ -77,7 +82,7 @@ ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
                                     output=''
                                     test_no=$((test_no + 1))
                                     ;;
-                            esac 
+                            esac
                             ;;
                     esac
                     ;;
@@ -113,7 +118,7 @@ ROOT_DIR="$(cd "$(/bin/dirname "$0")" && /bin/pwd)"
         info_file="${md_file#${ROOT_DIR}/docs/}"
         info_file="${info_file%.md}.vars"
         info_file="${ROOT_DIR}/compat/${info_file}"
-        mkdir -p "${info_file%/*}"
+        "$MKDIR" -p "${info_file%/*}"
         echo TEST_MAX_HEADER_LENGTH=$max_header_length > "$info_file"
     done
 }

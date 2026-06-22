@@ -22,7 +22,7 @@ When no options are given, **alias** makes it so that future calls to _alias-nam
 
 Example:
 
-    shopt -s expand_aliases >/dev/null 2>&1 # bash requires this
+    [ -n "${BASH_VERSION:-}" ] && shopt -s expand_aliases # bash requires this
     alias write_output=echo
     write_output Hello
     write_output World
@@ -40,7 +40,7 @@ commands that are completed once the shell executes:
 
 Example:
 
-    shopt -s expand_aliases >/dev/null 2>&1 # bash requires this
+    [ -n "${BASH_VERSION:-}" ] && shopt -s expand_aliases # bash requires this
     alias my_foreach='for WORD in'
     my_foreach foo bar baz
     do echo $WORD
@@ -71,8 +71,8 @@ Output:
 Compatibility
 -------------
 
-| Feature          | ash      | bash       | brush    | dash       | hush     | ksh                         | loksh   | mksh   | oksh    | osh      | posh     | yash     | yashrs   | zsh     |
-|:----------------:|:--------:|:----------:|:--------:|:----------:|:--------:|:---------------------------:|:-------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:-------:|
-| Basic Usage      | >=1.27.2 | >=2.05b.13 | >=0.2.23 | >=0.5.5.1  | -        | >=2007-01-11                | >=6.7.5 | >=R45  | >=6.5   | >=0.25.0 | -        | >=2.45   | >=0.4.5  | >=4.2.7 |
-| Partial Aliasing | >=1.27.2 | >=2.05b.13 | -        | >=0.5.5.1  | -        | >=2007-01-11                | >=6.7.5 | >=R45  | >=6.5   | -        | -        | >=2.45   | >=0.4.5  | >=4.2.7 |
-| Listing          | -        | >=2.05b.13 | >=0.2.23 | -          | -        | >=2007-01-11                | >=6.7.5 | >=R45  | >=6.5   | -        | -        | >=2.45   | -        | -       |
+| Feature          | ash       | bash       | brush    | dash       | hush      | ksh                         | loksh   | mksh   | oksh    | osh      | posh     | yash     | yashrs   | zsh     |
+|:----------------:|:---------:|:----------:|:--------:|:----------:|:---------:|:---------------------------:|:-------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:-------:|
+| Basic Usage      | >=1.27.2  | >=2.01.0   | >=0.2.23 | >=0.5.3    | -         | >=2007-01-11                | >=6.7.5 | >=R30  | >=6.5   | >=0.25.0 | -        | >=2.22   | >=0.3.0  | >=4.0.9 |
+| Partial Aliasing | >=1.27.2  | >=2.01.0   | -        | >=0.5.3    | -         | >=2007-01-11                | >=6.7.5 | >=R30  | >=6.5   | -        | -        | >=2.22   | >=0.3.0  | >=4.0.9 |
+| Listing          | -         | >=2.01.0   | >=0.2.23 | -          | -         | >=2007-01-11                | >=6.7.5 | >=R30  | >=6.5   | -        | -        | >=2.22   | -        | -       |
