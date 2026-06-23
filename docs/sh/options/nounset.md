@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 nounset
 =======
 
+> treats the expansion of an unset variable as an error
+
+- **set** -u
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#set)

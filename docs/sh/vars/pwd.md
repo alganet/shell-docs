@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 $PWD variable
 =============
 
+> the absolute pathname of the current working directory
+
+- **$PWD**
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_05_03)

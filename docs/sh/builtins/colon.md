@@ -7,7 +7,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 :
 =
 
-> null utility
+> does nothing and returns a successful exit status
 
 - **:** [_argument_...]
 

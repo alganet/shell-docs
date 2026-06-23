@@ -4,8 +4,8 @@ SPDX-FileCopyrightText: 2026 Alexandre Gomes Gaigalas <alganet@gmail.com>
 SPDX-License-Identifier: GFDL-1.3-or-later
 -->
 
-unset
-=====
+unalias
+=======
 
 > removes an alias declaration by _name_ if it exists
 

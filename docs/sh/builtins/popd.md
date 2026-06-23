@@ -7,7 +7,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 popd
 =====
 
-> removes _dir_ to the directory stack
+> removes the top entry from the directory stack and changes to the new top
 
 - **popd**
 

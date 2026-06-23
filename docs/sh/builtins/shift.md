@@ -7,7 +7,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 shift
 =====
 
-> shifts the position arguments by _count_
+> shifts the positional parameters down by _count_
 
 - **shift** [_count_=1]
 

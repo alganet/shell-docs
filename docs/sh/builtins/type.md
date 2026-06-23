@@ -7,7 +7,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 type
 ====
 
-> write a description of command type
+> indicates how _name_ would be interpreted as a command
 
 - **type** _name_...
 

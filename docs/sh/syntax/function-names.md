@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Function Names
 ==============
 
+> defines a shell function called _name_
+
+- _name_ **()** _command_
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_09_05)

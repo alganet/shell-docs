@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Here-Documents
 ==============
 
+> feeds the following lines to a command as its standard input
+
+- _command_ **<<**[**-**]_delimiter_
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_07_04)

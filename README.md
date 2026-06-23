@@ -65,6 +65,17 @@ Two consequences for writing examples:
     failure instead, e.g. `( readonly_var=x ) 2>/dev/null || echo "it is read-only"`. To show a
     diagnostic on purpose, opt into it with an explicit `2>&1` in the example.
 
+Every document follows the same shape — [`docs/sh/builtins/echo.md`](docs/sh/builtins/echo.md)
+is the reference:
+
+  1. the **title**: the exact feature or command name;
+  2. a one-line **`>` description** of what it does (present tense, active voice);
+  3. a **usage line**, e.g. `- **echo** [-neE] [_string_...]`, with `_placeholders_` in italics;
+  4. a **specification link** (POSIX where it applies, otherwise the defining shell);
+  5. one **H2 section per behaviour/option**, each opening with a one-line explanation *before*
+     its `Example:` / `Output:` block;
+  6. the generated **Compatibility** table, left untouched by `render`.
+
 The ledger under `data/` is the single durable source of truth: one TAB-delimited
 `feature / shell / version / status` record per observation. It is committed to git, so
 knowledge accumulates across shell-image refreshes — a version that later disappears from the

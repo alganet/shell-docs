@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Parameter Expansion
 ===================
 
+> substitutes — and optionally transforms — the value of a _parameter_
+
+- **${**_parameter_**}**
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02)

@@ -7,7 +7,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 wait
 ====
 
-> await process completion
+> waits for a process to complete and returns its exit status
 
 - **wait** [_pid_]
 

@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 While Loop
 ==========
 
+> runs _commands_ repeatedly as long as a _condition_ succeeds
+
+- **while** _condition_ **; do** _commands_ **; done**
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_09_04_09)

@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Backtick Expansion
 ==================
 
+> runs a _command_ and substitutes its standard output (older form of `$(...)`)
+
+- `` `_command_` ``
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_06_03)

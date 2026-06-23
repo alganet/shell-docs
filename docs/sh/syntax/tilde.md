@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Tilde Expansion
 ===============
 
+> expands to a user's home directory
+
+- **~**[_user_]
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_06_01)

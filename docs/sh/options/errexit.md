@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 errexit
 =======
 
+> exits the shell as soon as a command fails
+
+- **set** -e
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#set)

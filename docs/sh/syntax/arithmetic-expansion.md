@@ -7,6 +7,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Arithmetic Expansion
 ====================
 
+> evaluates an integer arithmetic _expression_ and substitutes the result
+
+- **$((** _expression_ **))**
+
 ---
 
 [POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_06_04)
