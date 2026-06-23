@@ -52,9 +52,9 @@ Output:
 Compatibility
 -------------
 
-| Feature              | ash | bash     | brush    | dash | hush | ksh | loksh | mksh | oksh | osh      | posh | yash  | yashrs | zsh     |
-|:--------------------:|:---:|:--------:|:--------:|:----:|:----:|:---:|:-----:|:----:|:----:|:--------:|:----:|:-----:|:------:|:-------:|
-| Basic Usage          | -   | ?2.01.0+ | ?0.2.23+ | -    | -    | -   | -     | -    | -    | ?0.25.0+ | -    | -     | -      | -       |
-| Non-Printing Variant | -   | -        | -        | -    | -    | -   | -     | -    | -    | -        | -    | 2.22+ | -      | ?4.0.9+ |
+| Feature              | ash | bash     | brush    | dash | hush | ksh | loksh | mksh | oksh | osh      | posh | yash   | yashrs | zsh     |
+|:--------------------:|:---:|:--------:|:--------:|:----:|:----:|:---:|:-----:|:----:|:----:|:--------:|:----:|:------:|:------:|:-------:|
+| Basic Usage          | -   | ?2.01.0+ | ?0.2.23+ | -    | -    | -   | -     | -    | -    | ?0.25.0+ | -    | -      | -      | -       |
+| Non-Printing Variant | -   | -        | -        | -    | -    | -   | -     | -    | -    | -        | -    | ?2.10+ | -      | ?4.0.9+ |
 
 Legend: trailing `+` still works at newest tested · leading `?` lower bound uncertain (may be older) · `X-Y` worked X through Y then removed · `-` unsupported · `.` untested

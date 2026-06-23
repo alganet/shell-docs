@@ -188,18 +188,18 @@ Basic Usage	yashrs	3.0.7	pass
 Basic Usage	yashrs	3.0.8	pass
 Basic Usage	yashrs	3.1.0	pass
 Basic Usage	yashrs	3.2.0	pass
-Basic Usage	yash	2.10	fail
-Basic Usage	yash	2.11	fail
-Basic Usage	yash	2.12	fail
-Basic Usage	yash	2.13	fail
-Basic Usage	yash	2.14	fail
-Basic Usage	yash	2.15	fail
-Basic Usage	yash	2.16	fail
-Basic Usage	yash	2.17	fail
-Basic Usage	yash	2.18	fail
-Basic Usage	yash	2.19	fail
-Basic Usage	yash	2.20	fail
-Basic Usage	yash	2.21	fail
+Basic Usage	yash	2.10	pass
+Basic Usage	yash	2.11	pass
+Basic Usage	yash	2.12	pass
+Basic Usage	yash	2.13	pass
+Basic Usage	yash	2.14	pass
+Basic Usage	yash	2.15	pass
+Basic Usage	yash	2.16	pass
+Basic Usage	yash	2.17	pass
+Basic Usage	yash	2.18	pass
+Basic Usage	yash	2.19	pass
+Basic Usage	yash	2.20	pass
+Basic Usage	yash	2.21	pass
 Basic Usage	yash	2.22	pass
 Basic Usage	yash	2.23	pass
 Basic Usage	yash	2.24	pass
@@ -438,18 +438,18 @@ Listing	yashrs	3.0.7	fail
 Listing	yashrs	3.0.8	fail
 Listing	yashrs	3.1.0	fail
 Listing	yashrs	3.2.0	fail
-Listing	yash	2.10	fail
-Listing	yash	2.11	fail
-Listing	yash	2.12	fail
-Listing	yash	2.13	fail
-Listing	yash	2.14	fail
-Listing	yash	2.15	fail
-Listing	yash	2.16	fail
-Listing	yash	2.17	fail
-Listing	yash	2.18	fail
-Listing	yash	2.19	fail
-Listing	yash	2.20	fail
-Listing	yash	2.21	fail
+Listing	yash	2.10	pass
+Listing	yash	2.11	pass
+Listing	yash	2.12	pass
+Listing	yash	2.13	pass
+Listing	yash	2.14	pass
+Listing	yash	2.15	pass
+Listing	yash	2.16	pass
+Listing	yash	2.17	pass
+Listing	yash	2.18	pass
+Listing	yash	2.19	pass
+Listing	yash	2.20	pass
+Listing	yash	2.21	pass
 Listing	yash	2.22	pass
 Listing	yash	2.23	pass
 Listing	yash	2.24	pass
@@ -693,13 +693,13 @@ Partial Aliasing	yash	2.11	fail
 Partial Aliasing	yash	2.12	fail
 Partial Aliasing	yash	2.13	fail
 Partial Aliasing	yash	2.14	fail
-Partial Aliasing	yash	2.15	fail
-Partial Aliasing	yash	2.16	fail
-Partial Aliasing	yash	2.17	fail
-Partial Aliasing	yash	2.18	fail
-Partial Aliasing	yash	2.19	fail
-Partial Aliasing	yash	2.20	fail
-Partial Aliasing	yash	2.21	fail
+Partial Aliasing	yash	2.15	pass
+Partial Aliasing	yash	2.16	pass
+Partial Aliasing	yash	2.17	pass
+Partial Aliasing	yash	2.18	pass
+Partial Aliasing	yash	2.19	pass
+Partial Aliasing	yash	2.20	pass
+Partial Aliasing	yash	2.21	pass
 Partial Aliasing	yash	2.22	pass
 Partial Aliasing	yash	2.23	pass
 Partial Aliasing	yash	2.24	pass
