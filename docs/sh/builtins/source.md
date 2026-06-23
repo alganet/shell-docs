@@ -13,6 +13,8 @@ source
 
 ---
 
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_19)
+
 Source is an alias to [dot](dot.md) in some shells.
 
 Basic Usage

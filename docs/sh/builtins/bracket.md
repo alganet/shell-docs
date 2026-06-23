@@ -13,6 +13,8 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 ---
 
+[POSIX Specification](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/test.html)
+
 `[` is equivalent to [test](test.md).
 
 Basic Usage
