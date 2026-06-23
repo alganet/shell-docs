@@ -1,0 +1,1988 @@
+# SPDX-FileCopyrightText: 2026 Alexandre Gomes Gaigalas <alganet@gmail.com>
+#
+# SPDX-License-Identifier: ISC
+
+Alternative if Present	ash	1.2.2	pass
+Alternative if Present	ash	1.2.2.1	pass
+Alternative if Present	ash	1.19.4	pass
+Alternative if Present	ash	1.20.2	pass
+Alternative if Present	ash	1.21.1	pass
+Alternative if Present	ash	1.22.1	pass
+Alternative if Present	ash	1.23.2	pass
+Alternative if Present	ash	1.24.2	pass
+Alternative if Present	ash	1.25.1	pass
+Alternative if Present	ash	1.26.2	pass
+Alternative if Present	ash	1.27.2	pass
+Alternative if Present	ash	1.28.4	pass
+Alternative if Present	ash	1.29.3	pass
+Alternative if Present	ash	1.30.1	pass
+Alternative if Present	ash	1.31.1	pass
+Alternative if Present	ash	1.32.1	pass
+Alternative if Present	ash	1.33.2	pass
+Alternative if Present	ash	1.34.1	pass
+Alternative if Present	ash	1.35.0	pass
+Alternative if Present	ash	1.36.1	pass
+Alternative if Present	ash	1.37.0	pass
+Alternative if Present	ash	1.38.0	pass
+Alternative if Present	bash	2.01.0	pass
+Alternative if Present	bash	2.02.0	pass
+Alternative if Present	bash	2.03.0	pass
+Alternative if Present	bash	2.04.0	pass
+Alternative if Present	bash	2.05a.0	pass
+Alternative if Present	bash	2.05b.13	pass
+Alternative if Present	bash	2.05.0	pass
+Alternative if Present	bash	3.0.22	pass
+Alternative if Present	bash	3.1.23	pass
+Alternative if Present	bash	3.2.57	pass
+Alternative if Present	bash	4.0.44	pass
+Alternative if Present	bash	4.1.17	pass
+Alternative if Present	bash	4.2.53	pass
+Alternative if Present	bash	4.3.48	pass
+Alternative if Present	bash	4.4.23	pass
+Alternative if Present	bash	5.0.18	pass
+Alternative if Present	bash	5.1.16	pass
+Alternative if Present	bash	5.2.37	pass
+Alternative if Present	bash	5.3.9	pass
+Alternative if Present	brush	0.2.23	pass
+Alternative if Present	brush	0.3.0	pass
+Alternative if Present	brush	0.4.0	pass
+Alternative if Present	dash	0.5.3	pass
+Alternative if Present	dash	0.5.4	pass
+Alternative if Present	dash	0.5.5.1	pass
+Alternative if Present	dash	0.5.6.1	pass
+Alternative if Present	dash	0.5.7	pass
+Alternative if Present	dash	0.5.8	pass
+Alternative if Present	dash	0.5.9.1	pass
+Alternative if Present	dash	0.5.10.2	pass
+Alternative if Present	dash	0.5.11.5	pass
+Alternative if Present	dash	0.5.12	pass
+Alternative if Present	dash	0.5.13.4	pass
+Alternative if Present	hush	1.19.4	pass
+Alternative if Present	hush	1.20.2	pass
+Alternative if Present	hush	1.21.1	pass
+Alternative if Present	hush	1.22.1	pass
+Alternative if Present	hush	1.23.2	pass
+Alternative if Present	hush	1.24.2	pass
+Alternative if Present	hush	1.25.1	pass
+Alternative if Present	hush	1.26.2	pass
+Alternative if Present	hush	1.27.2	pass
+Alternative if Present	hush	1.28.4	pass
+Alternative if Present	hush	1.29.3	pass
+Alternative if Present	hush	1.30.1	pass
+Alternative if Present	hush	1.31.1	pass
+Alternative if Present	hush	1.32.1	pass
+Alternative if Present	hush	1.33.2	pass
+Alternative if Present	hush	1.34.1	pass
+Alternative if Present	hush	1.35.0	pass
+Alternative if Present	hush	1.36.1	pass
+Alternative if Present	hush	1.37.0	pass
+Alternative if Present	hush	1.38.0	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.1	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.2	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.3	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.4	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.6	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.7	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.8	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.9	pass
+Alternative if Present	ksh	shvrA93uplusm-v1.0.10	pass
+Alternative if Present	ksh	shvrB2020-2020.0.0	pass
+Alternative if Present	ksh	shvrChistory-b_2007-01-11	pass
+Alternative if Present	ksh	shvrChistory-b_2008-02-02	pass
+Alternative if Present	ksh	shvrChistory-b_2008-06-08	pass
+Alternative if Present	ksh	shvrChistory-b_2008-11-04	pass
+Alternative if Present	ksh	shvrChistory-b_2010-06-21	pass
+Alternative if Present	ksh	shvrChistory-b_2010-10-26	pass
+Alternative if Present	ksh	shvrChistory-b_2011-03-10	pass
+Alternative if Present	ksh	shvrChistory-b_2012-08-01	pass
+Alternative if Present	ksh	shvrChistory-b_2016-01-10	pass
+Alternative if Present	loksh	6.7.5	pass
+Alternative if Present	loksh	6.8.1	pass
+Alternative if Present	loksh	6.9	pass
+Alternative if Present	loksh	7.0	pass
+Alternative if Present	loksh	7.1	pass
+Alternative if Present	loksh	7.2	pass
+Alternative if Present	loksh	7.3	pass
+Alternative if Present	loksh	7.4	pass
+Alternative if Present	loksh	7.5	pass
+Alternative if Present	loksh	7.6	pass
+Alternative if Present	loksh	7.7	pass
+Alternative if Present	loksh	7.8	pass
+Alternative if Present	loksh	7.9	pass
+Alternative if Present	mksh	R30	pass
+Alternative if Present	mksh	R31d	pass
+Alternative if Present	mksh	R32	pass
+Alternative if Present	mksh	R33d	pass
+Alternative if Present	mksh	R35b	pass
+Alternative if Present	mksh	R36b	pass
+Alternative if Present	mksh	R37c	pass
+Alternative if Present	mksh	R38c	pass
+Alternative if Present	mksh	R39c	pass
+Alternative if Present	mksh	R40f	pass
+Alternative if Present	mksh	R41c	pass
+Alternative if Present	mksh	R42b	pass
+Alternative if Present	mksh	R43	pass
+Alternative if Present	mksh	R44	pass
+Alternative if Present	mksh	R45	pass
+Alternative if Present	mksh	R46	pass
+Alternative if Present	mksh	R47	pass
+Alternative if Present	mksh	R48b	pass
+Alternative if Present	mksh	R49	pass
+Alternative if Present	mksh	R50f	pass
+Alternative if Present	mksh	R51	pass
+Alternative if Present	mksh	R52c	pass
+Alternative if Present	mksh	R53a	pass
+Alternative if Present	mksh	R54	pass
+Alternative if Present	mksh	R55	pass
+Alternative if Present	mksh	R56c	pass
+Alternative if Present	mksh	R57	pass
+Alternative if Present	mksh	R58	pass
+Alternative if Present	mksh	R59c	pass
+Alternative if Present	oksh	6.5	pass
+Alternative if Present	oksh	6.6	pass
+Alternative if Present	oksh	6.7.1	pass
+Alternative if Present	oksh	6.8.1	pass
+Alternative if Present	oksh	6.9	pass
+Alternative if Present	oksh	7.0	pass
+Alternative if Present	oksh	7.1	pass
+Alternative if Present	oksh	7.2	pass
+Alternative if Present	oksh	7.3	pass
+Alternative if Present	oksh	7.4	pass
+Alternative if Present	oksh	7.5	pass
+Alternative if Present	oksh	7.6	pass
+Alternative if Present	oksh	7.7	pass
+Alternative if Present	oksh	7.8	pass
+Alternative if Present	oksh	7.9	pass
+Alternative if Present	osh	0.25.0	pass
+Alternative if Present	osh	0.26.0	pass
+Alternative if Present	osh	0.27.0	pass
+Alternative if Present	osh	0.28.0	pass
+Alternative if Present	osh	0.29.0	pass
+Alternative if Present	osh	0.30.0	pass
+Alternative if Present	osh	0.31.0	pass
+Alternative if Present	osh	0.32.0	pass
+Alternative if Present	osh	0.33.0	pass
+Alternative if Present	osh	0.34.0	pass
+Alternative if Present	osh	0.35.0	pass
+Alternative if Present	osh	0.36.0	pass
+Alternative if Present	osh	0.37.0	pass
+Alternative if Present	posh	0.12.6	pass
+Alternative if Present	posh	0.13.2	pass
+Alternative if Present	posh	0.14.5	pass
+Alternative if Present	yashrs	0.3.0	pass
+Alternative if Present	yashrs	0.4.0	pass
+Alternative if Present	yashrs	0.4.1	pass
+Alternative if Present	yashrs	0.4.2	pass
+Alternative if Present	yashrs	0.4.3	pass
+Alternative if Present	yashrs	0.4.4	pass
+Alternative if Present	yashrs	0.4.5	pass
+Alternative if Present	yashrs	3.0.0	pass
+Alternative if Present	yashrs	3.0.1	pass
+Alternative if Present	yashrs	3.0.2	pass
+Alternative if Present	yashrs	3.0.3	pass
+Alternative if Present	yashrs	3.0.4	pass
+Alternative if Present	yashrs	3.0.5	pass
+Alternative if Present	yashrs	3.0.7	pass
+Alternative if Present	yashrs	3.0.8	pass
+Alternative if Present	yashrs	3.1.0	pass
+Alternative if Present	yashrs	3.2.0	pass
+Alternative if Present	yash	2.10	pass
+Alternative if Present	yash	2.11	pass
+Alternative if Present	yash	2.12	pass
+Alternative if Present	yash	2.13	pass
+Alternative if Present	yash	2.14	pass
+Alternative if Present	yash	2.15	pass
+Alternative if Present	yash	2.16	pass
+Alternative if Present	yash	2.17	pass
+Alternative if Present	yash	2.18	pass
+Alternative if Present	yash	2.19	pass
+Alternative if Present	yash	2.20	pass
+Alternative if Present	yash	2.21	pass
+Alternative if Present	yash	2.22	pass
+Alternative if Present	yash	2.23	pass
+Alternative if Present	yash	2.24	pass
+Alternative if Present	yash	2.25	pass
+Alternative if Present	yash	2.26.1	pass
+Alternative if Present	yash	2.27	pass
+Alternative if Present	yash	2.28	pass
+Alternative if Present	yash	2.29	pass
+Alternative if Present	yash	2.30	pass
+Alternative if Present	yash	2.31	pass
+Alternative if Present	yash	2.32.1	pass
+Alternative if Present	yash	2.33.1	pass
+Alternative if Present	yash	2.34	pass
+Alternative if Present	yash	2.35	pass
+Alternative if Present	yash	2.36	pass
+Alternative if Present	yash	2.37	pass
+Alternative if Present	yash	2.38	pass
+Alternative if Present	yash	2.39	pass
+Alternative if Present	yash	2.40	pass
+Alternative if Present	yash	2.41	pass
+Alternative if Present	yash	2.42	pass
+Alternative if Present	yash	2.43	pass
+Alternative if Present	yash	2.44	pass
+Alternative if Present	yash	2.45	pass
+Alternative if Present	yash	2.46	pass
+Alternative if Present	yash	2.47	pass
+Alternative if Present	yash	2.48	pass
+Alternative if Present	yash	2.49	pass
+Alternative if Present	yash	2.50	pass
+Alternative if Present	yash	2.51	pass
+Alternative if Present	yash	2.52	pass
+Alternative if Present	yash	2.53	pass
+Alternative if Present	yash	2.54	pass
+Alternative if Present	yash	2.55	pass
+Alternative if Present	yash	2.56.1	pass
+Alternative if Present	yash	2.57	pass
+Alternative if Present	yash	2.58.1	pass
+Alternative if Present	yash	2.59	pass
+Alternative if Present	yash	2.60	pass
+Alternative if Present	yash	2.61	pass
+Alternative if Present	zsh	4.0.9	pass
+Alternative if Present	zsh	4.2.7	pass
+Alternative if Present	zsh	5.0.8	pass
+Alternative if Present	zsh	5.1.1	pass
+Alternative if Present	zsh	5.2	pass
+Alternative if Present	zsh	5.3.1	pass
+Alternative if Present	zsh	5.4.2	pass
+Alternative if Present	zsh	5.5.1	pass
+Alternative if Present	zsh	5.6.2	pass
+Alternative if Present	zsh	5.7.1	pass
+Alternative if Present	zsh	5.8.1	pass
+Alternative if Present	zsh	5.9.1	pass
+Basic Usage	ash	1.2.2	pass
+Basic Usage	ash	1.2.2.1	pass
+Basic Usage	ash	1.19.4	pass
+Basic Usage	ash	1.20.2	pass
+Basic Usage	ash	1.21.1	pass
+Basic Usage	ash	1.22.1	pass
+Basic Usage	ash	1.23.2	pass
+Basic Usage	ash	1.24.2	pass
+Basic Usage	ash	1.25.1	pass
+Basic Usage	ash	1.26.2	pass
+Basic Usage	ash	1.27.2	pass
+Basic Usage	ash	1.28.4	pass
+Basic Usage	ash	1.29.3	pass
+Basic Usage	ash	1.30.1	pass
+Basic Usage	ash	1.31.1	pass
+Basic Usage	ash	1.32.1	pass
+Basic Usage	ash	1.33.2	pass
+Basic Usage	ash	1.34.1	pass
+Basic Usage	ash	1.35.0	pass
+Basic Usage	ash	1.36.1	pass
+Basic Usage	ash	1.37.0	pass
+Basic Usage	ash	1.38.0	pass
+Basic Usage	bash	2.01.0	pass
+Basic Usage	bash	2.02.0	pass
+Basic Usage	bash	2.03.0	pass
+Basic Usage	bash	2.04.0	pass
+Basic Usage	bash	2.05a.0	pass
+Basic Usage	bash	2.05b.13	pass
+Basic Usage	bash	2.05.0	pass
+Basic Usage	bash	3.0.22	pass
+Basic Usage	bash	3.1.23	pass
+Basic Usage	bash	3.2.57	pass
+Basic Usage	bash	4.0.44	pass
+Basic Usage	bash	4.1.17	pass
+Basic Usage	bash	4.2.53	pass
+Basic Usage	bash	4.3.48	pass
+Basic Usage	bash	4.4.23	pass
+Basic Usage	bash	5.0.18	pass
+Basic Usage	bash	5.1.16	pass
+Basic Usage	bash	5.2.37	pass
+Basic Usage	bash	5.3.9	pass
+Basic Usage	brush	0.2.23	pass
+Basic Usage	brush	0.3.0	pass
+Basic Usage	brush	0.4.0	pass
+Basic Usage	dash	0.5.3	pass
+Basic Usage	dash	0.5.4	pass
+Basic Usage	dash	0.5.5.1	pass
+Basic Usage	dash	0.5.6.1	pass
+Basic Usage	dash	0.5.7	pass
+Basic Usage	dash	0.5.8	pass
+Basic Usage	dash	0.5.9.1	pass
+Basic Usage	dash	0.5.10.2	pass
+Basic Usage	dash	0.5.11.5	pass
+Basic Usage	dash	0.5.12	pass
+Basic Usage	dash	0.5.13.4	pass
+Basic Usage	hush	1.19.4	pass
+Basic Usage	hush	1.20.2	pass
+Basic Usage	hush	1.21.1	pass
+Basic Usage	hush	1.22.1	pass
+Basic Usage	hush	1.23.2	pass
+Basic Usage	hush	1.24.2	pass
+Basic Usage	hush	1.25.1	pass
+Basic Usage	hush	1.26.2	pass
+Basic Usage	hush	1.27.2	pass
+Basic Usage	hush	1.28.4	pass
+Basic Usage	hush	1.29.3	pass
+Basic Usage	hush	1.30.1	pass
+Basic Usage	hush	1.31.1	pass
+Basic Usage	hush	1.32.1	pass
+Basic Usage	hush	1.33.2	pass
+Basic Usage	hush	1.34.1	pass
+Basic Usage	hush	1.35.0	pass
+Basic Usage	hush	1.36.1	pass
+Basic Usage	hush	1.37.0	pass
+Basic Usage	hush	1.38.0	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.1	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.2	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.3	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.4	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.6	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.7	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.8	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.9	pass
+Basic Usage	ksh	shvrA93uplusm-v1.0.10	pass
+Basic Usage	ksh	shvrB2020-2020.0.0	pass
+Basic Usage	ksh	shvrChistory-b_2007-01-11	pass
+Basic Usage	ksh	shvrChistory-b_2008-02-02	pass
+Basic Usage	ksh	shvrChistory-b_2008-06-08	pass
+Basic Usage	ksh	shvrChistory-b_2008-11-04	pass
+Basic Usage	ksh	shvrChistory-b_2010-06-21	pass
+Basic Usage	ksh	shvrChistory-b_2010-10-26	pass
+Basic Usage	ksh	shvrChistory-b_2011-03-10	pass
+Basic Usage	ksh	shvrChistory-b_2012-08-01	pass
+Basic Usage	ksh	shvrChistory-b_2016-01-10	pass
+Basic Usage	loksh	6.7.5	pass
+Basic Usage	loksh	6.8.1	pass
+Basic Usage	loksh	6.9	pass
+Basic Usage	loksh	7.0	pass
+Basic Usage	loksh	7.1	pass
+Basic Usage	loksh	7.2	pass
+Basic Usage	loksh	7.3	pass
+Basic Usage	loksh	7.4	pass
+Basic Usage	loksh	7.5	pass
+Basic Usage	loksh	7.6	pass
+Basic Usage	loksh	7.7	pass
+Basic Usage	loksh	7.8	pass
+Basic Usage	loksh	7.9	pass
+Basic Usage	mksh	R30	pass
+Basic Usage	mksh	R31d	pass
+Basic Usage	mksh	R32	pass
+Basic Usage	mksh	R33d	pass
+Basic Usage	mksh	R35b	pass
+Basic Usage	mksh	R36b	pass
+Basic Usage	mksh	R37c	pass
+Basic Usage	mksh	R38c	pass
+Basic Usage	mksh	R39c	pass
+Basic Usage	mksh	R40f	pass
+Basic Usage	mksh	R41c	pass
+Basic Usage	mksh	R42b	pass
+Basic Usage	mksh	R43	pass
+Basic Usage	mksh	R44	pass
+Basic Usage	mksh	R45	pass
+Basic Usage	mksh	R46	pass
+Basic Usage	mksh	R47	pass
+Basic Usage	mksh	R48b	pass
+Basic Usage	mksh	R49	pass
+Basic Usage	mksh	R50f	pass
+Basic Usage	mksh	R51	pass
+Basic Usage	mksh	R52c	pass
+Basic Usage	mksh	R53a	pass
+Basic Usage	mksh	R54	pass
+Basic Usage	mksh	R55	pass
+Basic Usage	mksh	R56c	pass
+Basic Usage	mksh	R57	pass
+Basic Usage	mksh	R58	pass
+Basic Usage	mksh	R59c	pass
+Basic Usage	oksh	6.5	pass
+Basic Usage	oksh	6.6	pass
+Basic Usage	oksh	6.7.1	pass
+Basic Usage	oksh	6.8.1	pass
+Basic Usage	oksh	6.9	pass
+Basic Usage	oksh	7.0	pass
+Basic Usage	oksh	7.1	pass
+Basic Usage	oksh	7.2	pass
+Basic Usage	oksh	7.3	pass
+Basic Usage	oksh	7.4	pass
+Basic Usage	oksh	7.5	pass
+Basic Usage	oksh	7.6	pass
+Basic Usage	oksh	7.7	pass
+Basic Usage	oksh	7.8	pass
+Basic Usage	oksh	7.9	pass
+Basic Usage	osh	0.25.0	pass
+Basic Usage	osh	0.26.0	pass
+Basic Usage	osh	0.27.0	pass
+Basic Usage	osh	0.28.0	pass
+Basic Usage	osh	0.29.0	pass
+Basic Usage	osh	0.30.0	pass
+Basic Usage	osh	0.31.0	pass
+Basic Usage	osh	0.32.0	pass
+Basic Usage	osh	0.33.0	pass
+Basic Usage	osh	0.34.0	pass
+Basic Usage	osh	0.35.0	pass
+Basic Usage	osh	0.36.0	pass
+Basic Usage	osh	0.37.0	pass
+Basic Usage	posh	0.12.6	pass
+Basic Usage	posh	0.13.2	pass
+Basic Usage	posh	0.14.5	pass
+Basic Usage	yashrs	0.3.0	pass
+Basic Usage	yashrs	0.4.0	pass
+Basic Usage	yashrs	0.4.1	pass
+Basic Usage	yashrs	0.4.2	pass
+Basic Usage	yashrs	0.4.3	pass
+Basic Usage	yashrs	0.4.4	pass
+Basic Usage	yashrs	0.4.5	pass
+Basic Usage	yashrs	3.0.0	pass
+Basic Usage	yashrs	3.0.1	pass
+Basic Usage	yashrs	3.0.2	pass
+Basic Usage	yashrs	3.0.3	pass
+Basic Usage	yashrs	3.0.4	pass
+Basic Usage	yashrs	3.0.5	pass
+Basic Usage	yashrs	3.0.7	pass
+Basic Usage	yashrs	3.0.8	pass
+Basic Usage	yashrs	3.1.0	pass
+Basic Usage	yashrs	3.2.0	pass
+Basic Usage	yash	2.10	pass
+Basic Usage	yash	2.11	pass
+Basic Usage	yash	2.12	pass
+Basic Usage	yash	2.13	pass
+Basic Usage	yash	2.14	pass
+Basic Usage	yash	2.15	pass
+Basic Usage	yash	2.16	pass
+Basic Usage	yash	2.17	pass
+Basic Usage	yash	2.18	pass
+Basic Usage	yash	2.19	pass
+Basic Usage	yash	2.20	pass
+Basic Usage	yash	2.21	pass
+Basic Usage	yash	2.22	pass
+Basic Usage	yash	2.23	pass
+Basic Usage	yash	2.24	pass
+Basic Usage	yash	2.25	pass
+Basic Usage	yash	2.26.1	pass
+Basic Usage	yash	2.27	pass
+Basic Usage	yash	2.28	pass
+Basic Usage	yash	2.29	pass
+Basic Usage	yash	2.30	pass
+Basic Usage	yash	2.31	pass
+Basic Usage	yash	2.32.1	pass
+Basic Usage	yash	2.33.1	pass
+Basic Usage	yash	2.34	pass
+Basic Usage	yash	2.35	pass
+Basic Usage	yash	2.36	pass
+Basic Usage	yash	2.37	pass
+Basic Usage	yash	2.38	pass
+Basic Usage	yash	2.39	pass
+Basic Usage	yash	2.40	pass
+Basic Usage	yash	2.41	pass
+Basic Usage	yash	2.42	pass
+Basic Usage	yash	2.43	pass
+Basic Usage	yash	2.44	pass
+Basic Usage	yash	2.45	pass
+Basic Usage	yash	2.46	pass
+Basic Usage	yash	2.47	pass
+Basic Usage	yash	2.48	pass
+Basic Usage	yash	2.49	pass
+Basic Usage	yash	2.50	pass
+Basic Usage	yash	2.51	pass
+Basic Usage	yash	2.52	pass
+Basic Usage	yash	2.53	pass
+Basic Usage	yash	2.54	pass
+Basic Usage	yash	2.55	pass
+Basic Usage	yash	2.56.1	pass
+Basic Usage	yash	2.57	pass
+Basic Usage	yash	2.58.1	pass
+Basic Usage	yash	2.59	pass
+Basic Usage	yash	2.60	pass
+Basic Usage	yash	2.61	pass
+Basic Usage	zsh	4.0.9	pass
+Basic Usage	zsh	4.2.7	pass
+Basic Usage	zsh	5.0.8	pass
+Basic Usage	zsh	5.1.1	pass
+Basic Usage	zsh	5.2	pass
+Basic Usage	zsh	5.3.1	pass
+Basic Usage	zsh	5.4.2	pass
+Basic Usage	zsh	5.5.1	pass
+Basic Usage	zsh	5.6.2	pass
+Basic Usage	zsh	5.7.1	pass
+Basic Usage	zsh	5.8.1	pass
+Basic Usage	zsh	5.9.1	pass
+Default Assignment	ash	1.2.2	pass
+Default Assignment	ash	1.2.2.1	pass
+Default Assignment	ash	1.19.4	pass
+Default Assignment	ash	1.20.2	pass
+Default Assignment	ash	1.21.1	pass
+Default Assignment	ash	1.22.1	pass
+Default Assignment	ash	1.23.2	pass
+Default Assignment	ash	1.24.2	pass
+Default Assignment	ash	1.25.1	pass
+Default Assignment	ash	1.26.2	pass
+Default Assignment	ash	1.27.2	pass
+Default Assignment	ash	1.28.4	pass
+Default Assignment	ash	1.29.3	pass
+Default Assignment	ash	1.30.1	pass
+Default Assignment	ash	1.31.1	pass
+Default Assignment	ash	1.32.1	pass
+Default Assignment	ash	1.33.2	pass
+Default Assignment	ash	1.34.1	pass
+Default Assignment	ash	1.35.0	pass
+Default Assignment	ash	1.36.1	pass
+Default Assignment	ash	1.37.0	pass
+Default Assignment	ash	1.38.0	pass
+Default Assignment	bash	2.01.0	pass
+Default Assignment	bash	2.02.0	pass
+Default Assignment	bash	2.03.0	pass
+Default Assignment	bash	2.04.0	pass
+Default Assignment	bash	2.05a.0	pass
+Default Assignment	bash	2.05b.13	pass
+Default Assignment	bash	2.05.0	pass
+Default Assignment	bash	3.0.22	pass
+Default Assignment	bash	3.1.23	pass
+Default Assignment	bash	3.2.57	pass
+Default Assignment	bash	4.0.44	pass
+Default Assignment	bash	4.1.17	pass
+Default Assignment	bash	4.2.53	pass
+Default Assignment	bash	4.3.48	pass
+Default Assignment	bash	4.4.23	pass
+Default Assignment	bash	5.0.18	pass
+Default Assignment	bash	5.1.16	pass
+Default Assignment	bash	5.2.37	pass
+Default Assignment	bash	5.3.9	pass
+Default Assignment	brush	0.2.23	pass
+Default Assignment	brush	0.3.0	pass
+Default Assignment	brush	0.4.0	pass
+Default Assignment	dash	0.5.3	pass
+Default Assignment	dash	0.5.4	pass
+Default Assignment	dash	0.5.5.1	pass
+Default Assignment	dash	0.5.6.1	pass
+Default Assignment	dash	0.5.7	pass
+Default Assignment	dash	0.5.8	pass
+Default Assignment	dash	0.5.9.1	pass
+Default Assignment	dash	0.5.10.2	pass
+Default Assignment	dash	0.5.11.5	pass
+Default Assignment	dash	0.5.12	pass
+Default Assignment	dash	0.5.13.4	pass
+Default Assignment	hush	1.19.4	pass
+Default Assignment	hush	1.20.2	pass
+Default Assignment	hush	1.21.1	pass
+Default Assignment	hush	1.22.1	pass
+Default Assignment	hush	1.23.2	pass
+Default Assignment	hush	1.24.2	pass
+Default Assignment	hush	1.25.1	pass
+Default Assignment	hush	1.26.2	pass
+Default Assignment	hush	1.27.2	pass
+Default Assignment	hush	1.28.4	pass
+Default Assignment	hush	1.29.3	pass
+Default Assignment	hush	1.30.1	pass
+Default Assignment	hush	1.31.1	pass
+Default Assignment	hush	1.32.1	pass
+Default Assignment	hush	1.33.2	pass
+Default Assignment	hush	1.34.1	pass
+Default Assignment	hush	1.35.0	pass
+Default Assignment	hush	1.36.1	pass
+Default Assignment	hush	1.37.0	pass
+Default Assignment	hush	1.38.0	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.1	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.2	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.3	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.4	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.6	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.7	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.8	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.9	pass
+Default Assignment	ksh	shvrA93uplusm-v1.0.10	pass
+Default Assignment	ksh	shvrB2020-2020.0.0	pass
+Default Assignment	ksh	shvrChistory-b_2007-01-11	pass
+Default Assignment	ksh	shvrChistory-b_2008-02-02	pass
+Default Assignment	ksh	shvrChistory-b_2008-06-08	pass
+Default Assignment	ksh	shvrChistory-b_2008-11-04	pass
+Default Assignment	ksh	shvrChistory-b_2010-06-21	pass
+Default Assignment	ksh	shvrChistory-b_2010-10-26	pass
+Default Assignment	ksh	shvrChistory-b_2011-03-10	pass
+Default Assignment	ksh	shvrChistory-b_2012-08-01	pass
+Default Assignment	ksh	shvrChistory-b_2016-01-10	pass
+Default Assignment	loksh	6.7.5	pass
+Default Assignment	loksh	6.8.1	pass
+Default Assignment	loksh	6.9	pass
+Default Assignment	loksh	7.0	pass
+Default Assignment	loksh	7.1	pass
+Default Assignment	loksh	7.2	pass
+Default Assignment	loksh	7.3	pass
+Default Assignment	loksh	7.4	pass
+Default Assignment	loksh	7.5	pass
+Default Assignment	loksh	7.6	pass
+Default Assignment	loksh	7.7	pass
+Default Assignment	loksh	7.8	pass
+Default Assignment	loksh	7.9	pass
+Default Assignment	mksh	R30	pass
+Default Assignment	mksh	R31d	pass
+Default Assignment	mksh	R32	pass
+Default Assignment	mksh	R33d	pass
+Default Assignment	mksh	R35b	pass
+Default Assignment	mksh	R36b	pass
+Default Assignment	mksh	R37c	pass
+Default Assignment	mksh	R38c	pass
+Default Assignment	mksh	R39c	pass
+Default Assignment	mksh	R40f	pass
+Default Assignment	mksh	R41c	pass
+Default Assignment	mksh	R42b	pass
+Default Assignment	mksh	R43	pass
+Default Assignment	mksh	R44	pass
+Default Assignment	mksh	R45	pass
+Default Assignment	mksh	R46	pass
+Default Assignment	mksh	R47	pass
+Default Assignment	mksh	R48b	pass
+Default Assignment	mksh	R49	pass
+Default Assignment	mksh	R50f	pass
+Default Assignment	mksh	R51	pass
+Default Assignment	mksh	R52c	pass
+Default Assignment	mksh	R53a	pass
+Default Assignment	mksh	R54	pass
+Default Assignment	mksh	R55	pass
+Default Assignment	mksh	R56c	pass
+Default Assignment	mksh	R57	pass
+Default Assignment	mksh	R58	pass
+Default Assignment	mksh	R59c	pass
+Default Assignment	oksh	6.5	pass
+Default Assignment	oksh	6.6	pass
+Default Assignment	oksh	6.7.1	pass
+Default Assignment	oksh	6.8.1	pass
+Default Assignment	oksh	6.9	pass
+Default Assignment	oksh	7.0	pass
+Default Assignment	oksh	7.1	pass
+Default Assignment	oksh	7.2	pass
+Default Assignment	oksh	7.3	pass
+Default Assignment	oksh	7.4	pass
+Default Assignment	oksh	7.5	pass
+Default Assignment	oksh	7.6	pass
+Default Assignment	oksh	7.7	pass
+Default Assignment	oksh	7.8	pass
+Default Assignment	oksh	7.9	pass
+Default Assignment	osh	0.25.0	pass
+Default Assignment	osh	0.26.0	pass
+Default Assignment	osh	0.27.0	pass
+Default Assignment	osh	0.28.0	pass
+Default Assignment	osh	0.29.0	pass
+Default Assignment	osh	0.30.0	pass
+Default Assignment	osh	0.31.0	pass
+Default Assignment	osh	0.32.0	pass
+Default Assignment	osh	0.33.0	pass
+Default Assignment	osh	0.34.0	pass
+Default Assignment	osh	0.35.0	pass
+Default Assignment	osh	0.36.0	pass
+Default Assignment	osh	0.37.0	pass
+Default Assignment	posh	0.12.6	pass
+Default Assignment	posh	0.13.2	pass
+Default Assignment	posh	0.14.5	pass
+Default Assignment	yashrs	0.3.0	pass
+Default Assignment	yashrs	0.4.0	pass
+Default Assignment	yashrs	0.4.1	pass
+Default Assignment	yashrs	0.4.2	pass
+Default Assignment	yashrs	0.4.3	pass
+Default Assignment	yashrs	0.4.4	pass
+Default Assignment	yashrs	0.4.5	pass
+Default Assignment	yashrs	3.0.0	pass
+Default Assignment	yashrs	3.0.1	pass
+Default Assignment	yashrs	3.0.2	pass
+Default Assignment	yashrs	3.0.3	pass
+Default Assignment	yashrs	3.0.4	pass
+Default Assignment	yashrs	3.0.5	pass
+Default Assignment	yashrs	3.0.7	pass
+Default Assignment	yashrs	3.0.8	pass
+Default Assignment	yashrs	3.1.0	pass
+Default Assignment	yashrs	3.2.0	pass
+Default Assignment	yash	2.10	pass
+Default Assignment	yash	2.11	pass
+Default Assignment	yash	2.12	pass
+Default Assignment	yash	2.13	pass
+Default Assignment	yash	2.14	pass
+Default Assignment	yash	2.15	pass
+Default Assignment	yash	2.16	pass
+Default Assignment	yash	2.17	pass
+Default Assignment	yash	2.18	pass
+Default Assignment	yash	2.19	pass
+Default Assignment	yash	2.20	pass
+Default Assignment	yash	2.21	pass
+Default Assignment	yash	2.22	pass
+Default Assignment	yash	2.23	pass
+Default Assignment	yash	2.24	pass
+Default Assignment	yash	2.25	pass
+Default Assignment	yash	2.26.1	pass
+Default Assignment	yash	2.27	pass
+Default Assignment	yash	2.28	pass
+Default Assignment	yash	2.29	pass
+Default Assignment	yash	2.30	pass
+Default Assignment	yash	2.31	pass
+Default Assignment	yash	2.32.1	pass
+Default Assignment	yash	2.33.1	pass
+Default Assignment	yash	2.34	pass
+Default Assignment	yash	2.35	pass
+Default Assignment	yash	2.36	pass
+Default Assignment	yash	2.37	pass
+Default Assignment	yash	2.38	pass
+Default Assignment	yash	2.39	pass
+Default Assignment	yash	2.40	pass
+Default Assignment	yash	2.41	pass
+Default Assignment	yash	2.42	pass
+Default Assignment	yash	2.43	pass
+Default Assignment	yash	2.44	pass
+Default Assignment	yash	2.45	pass
+Default Assignment	yash	2.46	pass
+Default Assignment	yash	2.47	pass
+Default Assignment	yash	2.48	pass
+Default Assignment	yash	2.49	pass
+Default Assignment	yash	2.50	pass
+Default Assignment	yash	2.51	pass
+Default Assignment	yash	2.52	pass
+Default Assignment	yash	2.53	pass
+Default Assignment	yash	2.54	pass
+Default Assignment	yash	2.55	pass
+Default Assignment	yash	2.56.1	pass
+Default Assignment	yash	2.57	pass
+Default Assignment	yash	2.58.1	pass
+Default Assignment	yash	2.59	pass
+Default Assignment	yash	2.60	pass
+Default Assignment	yash	2.61	pass
+Default Assignment	zsh	4.0.9	pass
+Default Assignment	zsh	4.2.7	pass
+Default Assignment	zsh	5.0.8	pass
+Default Assignment	zsh	5.1.1	pass
+Default Assignment	zsh	5.2	pass
+Default Assignment	zsh	5.3.1	pass
+Default Assignment	zsh	5.4.2	pass
+Default Assignment	zsh	5.5.1	pass
+Default Assignment	zsh	5.6.2	pass
+Default Assignment	zsh	5.7.1	pass
+Default Assignment	zsh	5.8.1	pass
+Default Assignment	zsh	5.9.1	pass
+Default Value	ash	1.2.2	pass
+Default Value	ash	1.2.2.1	pass
+Default Value	ash	1.19.4	pass
+Default Value	ash	1.20.2	pass
+Default Value	ash	1.21.1	pass
+Default Value	ash	1.22.1	pass
+Default Value	ash	1.23.2	pass
+Default Value	ash	1.24.2	pass
+Default Value	ash	1.25.1	pass
+Default Value	ash	1.26.2	pass
+Default Value	ash	1.27.2	pass
+Default Value	ash	1.28.4	pass
+Default Value	ash	1.29.3	pass
+Default Value	ash	1.30.1	pass
+Default Value	ash	1.31.1	pass
+Default Value	ash	1.32.1	pass
+Default Value	ash	1.33.2	pass
+Default Value	ash	1.34.1	pass
+Default Value	ash	1.35.0	pass
+Default Value	ash	1.36.1	pass
+Default Value	ash	1.37.0	pass
+Default Value	ash	1.38.0	pass
+Default Value	bash	2.01.0	pass
+Default Value	bash	2.02.0	pass
+Default Value	bash	2.03.0	pass
+Default Value	bash	2.04.0	pass
+Default Value	bash	2.05a.0	pass
+Default Value	bash	2.05b.13	pass
+Default Value	bash	2.05.0	pass
+Default Value	bash	3.0.22	pass
+Default Value	bash	3.1.23	pass
+Default Value	bash	3.2.57	pass
+Default Value	bash	4.0.44	pass
+Default Value	bash	4.1.17	pass
+Default Value	bash	4.2.53	pass
+Default Value	bash	4.3.48	pass
+Default Value	bash	4.4.23	pass
+Default Value	bash	5.0.18	pass
+Default Value	bash	5.1.16	pass
+Default Value	bash	5.2.37	pass
+Default Value	bash	5.3.9	pass
+Default Value	brush	0.2.23	pass
+Default Value	brush	0.3.0	pass
+Default Value	brush	0.4.0	pass
+Default Value	dash	0.5.3	pass
+Default Value	dash	0.5.4	pass
+Default Value	dash	0.5.5.1	pass
+Default Value	dash	0.5.6.1	pass
+Default Value	dash	0.5.7	pass
+Default Value	dash	0.5.8	pass
+Default Value	dash	0.5.9.1	pass
+Default Value	dash	0.5.10.2	pass
+Default Value	dash	0.5.11.5	pass
+Default Value	dash	0.5.12	pass
+Default Value	dash	0.5.13.4	pass
+Default Value	hush	1.19.4	pass
+Default Value	hush	1.20.2	pass
+Default Value	hush	1.21.1	pass
+Default Value	hush	1.22.1	pass
+Default Value	hush	1.23.2	pass
+Default Value	hush	1.24.2	pass
+Default Value	hush	1.25.1	pass
+Default Value	hush	1.26.2	pass
+Default Value	hush	1.27.2	pass
+Default Value	hush	1.28.4	pass
+Default Value	hush	1.29.3	pass
+Default Value	hush	1.30.1	pass
+Default Value	hush	1.31.1	pass
+Default Value	hush	1.32.1	pass
+Default Value	hush	1.33.2	pass
+Default Value	hush	1.34.1	pass
+Default Value	hush	1.35.0	pass
+Default Value	hush	1.36.1	pass
+Default Value	hush	1.37.0	pass
+Default Value	hush	1.38.0	pass
+Default Value	ksh	shvrA93uplusm-v1.0.1	pass
+Default Value	ksh	shvrA93uplusm-v1.0.2	pass
+Default Value	ksh	shvrA93uplusm-v1.0.3	pass
+Default Value	ksh	shvrA93uplusm-v1.0.4	pass
+Default Value	ksh	shvrA93uplusm-v1.0.6	pass
+Default Value	ksh	shvrA93uplusm-v1.0.7	pass
+Default Value	ksh	shvrA93uplusm-v1.0.8	pass
+Default Value	ksh	shvrA93uplusm-v1.0.9	pass
+Default Value	ksh	shvrA93uplusm-v1.0.10	pass
+Default Value	ksh	shvrB2020-2020.0.0	pass
+Default Value	ksh	shvrChistory-b_2007-01-11	pass
+Default Value	ksh	shvrChistory-b_2008-02-02	pass
+Default Value	ksh	shvrChistory-b_2008-06-08	pass
+Default Value	ksh	shvrChistory-b_2008-11-04	pass
+Default Value	ksh	shvrChistory-b_2010-06-21	pass
+Default Value	ksh	shvrChistory-b_2010-10-26	pass
+Default Value	ksh	shvrChistory-b_2011-03-10	pass
+Default Value	ksh	shvrChistory-b_2012-08-01	pass
+Default Value	ksh	shvrChistory-b_2016-01-10	pass
+Default Value	loksh	6.7.5	pass
+Default Value	loksh	6.8.1	pass
+Default Value	loksh	6.9	pass
+Default Value	loksh	7.0	pass
+Default Value	loksh	7.1	pass
+Default Value	loksh	7.2	pass
+Default Value	loksh	7.3	pass
+Default Value	loksh	7.4	pass
+Default Value	loksh	7.5	pass
+Default Value	loksh	7.6	pass
+Default Value	loksh	7.7	pass
+Default Value	loksh	7.8	pass
+Default Value	loksh	7.9	pass
+Default Value	mksh	R30	pass
+Default Value	mksh	R31d	pass
+Default Value	mksh	R32	pass
+Default Value	mksh	R33d	pass
+Default Value	mksh	R35b	pass
+Default Value	mksh	R36b	pass
+Default Value	mksh	R37c	pass
+Default Value	mksh	R38c	pass
+Default Value	mksh	R39c	pass
+Default Value	mksh	R40f	pass
+Default Value	mksh	R41c	pass
+Default Value	mksh	R42b	pass
+Default Value	mksh	R43	pass
+Default Value	mksh	R44	pass
+Default Value	mksh	R45	pass
+Default Value	mksh	R46	pass
+Default Value	mksh	R47	pass
+Default Value	mksh	R48b	pass
+Default Value	mksh	R49	pass
+Default Value	mksh	R50f	pass
+Default Value	mksh	R51	pass
+Default Value	mksh	R52c	pass
+Default Value	mksh	R53a	pass
+Default Value	mksh	R54	pass
+Default Value	mksh	R55	pass
+Default Value	mksh	R56c	pass
+Default Value	mksh	R57	pass
+Default Value	mksh	R58	pass
+Default Value	mksh	R59c	pass
+Default Value	oksh	6.5	pass
+Default Value	oksh	6.6	pass
+Default Value	oksh	6.7.1	pass
+Default Value	oksh	6.8.1	pass
+Default Value	oksh	6.9	pass
+Default Value	oksh	7.0	pass
+Default Value	oksh	7.1	pass
+Default Value	oksh	7.2	pass
+Default Value	oksh	7.3	pass
+Default Value	oksh	7.4	pass
+Default Value	oksh	7.5	pass
+Default Value	oksh	7.6	pass
+Default Value	oksh	7.7	pass
+Default Value	oksh	7.8	pass
+Default Value	oksh	7.9	pass
+Default Value	osh	0.25.0	pass
+Default Value	osh	0.26.0	pass
+Default Value	osh	0.27.0	pass
+Default Value	osh	0.28.0	pass
+Default Value	osh	0.29.0	pass
+Default Value	osh	0.30.0	pass
+Default Value	osh	0.31.0	pass
+Default Value	osh	0.32.0	pass
+Default Value	osh	0.33.0	pass
+Default Value	osh	0.34.0	pass
+Default Value	osh	0.35.0	pass
+Default Value	osh	0.36.0	pass
+Default Value	osh	0.37.0	pass
+Default Value	posh	0.12.6	pass
+Default Value	posh	0.13.2	pass
+Default Value	posh	0.14.5	pass
+Default Value	yashrs	0.3.0	pass
+Default Value	yashrs	0.4.0	pass
+Default Value	yashrs	0.4.1	pass
+Default Value	yashrs	0.4.2	pass
+Default Value	yashrs	0.4.3	pass
+Default Value	yashrs	0.4.4	pass
+Default Value	yashrs	0.4.5	pass
+Default Value	yashrs	3.0.0	pass
+Default Value	yashrs	3.0.1	pass
+Default Value	yashrs	3.0.2	pass
+Default Value	yashrs	3.0.3	pass
+Default Value	yashrs	3.0.4	pass
+Default Value	yashrs	3.0.5	pass
+Default Value	yashrs	3.0.7	pass
+Default Value	yashrs	3.0.8	pass
+Default Value	yashrs	3.1.0	pass
+Default Value	yashrs	3.2.0	pass
+Default Value	yash	2.10	pass
+Default Value	yash	2.11	pass
+Default Value	yash	2.12	pass
+Default Value	yash	2.13	pass
+Default Value	yash	2.14	pass
+Default Value	yash	2.15	pass
+Default Value	yash	2.16	pass
+Default Value	yash	2.17	pass
+Default Value	yash	2.18	pass
+Default Value	yash	2.19	pass
+Default Value	yash	2.20	pass
+Default Value	yash	2.21	pass
+Default Value	yash	2.22	pass
+Default Value	yash	2.23	pass
+Default Value	yash	2.24	pass
+Default Value	yash	2.25	pass
+Default Value	yash	2.26.1	pass
+Default Value	yash	2.27	pass
+Default Value	yash	2.28	pass
+Default Value	yash	2.29	pass
+Default Value	yash	2.30	pass
+Default Value	yash	2.31	pass
+Default Value	yash	2.32.1	pass
+Default Value	yash	2.33.1	pass
+Default Value	yash	2.34	pass
+Default Value	yash	2.35	pass
+Default Value	yash	2.36	pass
+Default Value	yash	2.37	pass
+Default Value	yash	2.38	pass
+Default Value	yash	2.39	pass
+Default Value	yash	2.40	pass
+Default Value	yash	2.41	pass
+Default Value	yash	2.42	pass
+Default Value	yash	2.43	pass
+Default Value	yash	2.44	pass
+Default Value	yash	2.45	pass
+Default Value	yash	2.46	pass
+Default Value	yash	2.47	pass
+Default Value	yash	2.48	pass
+Default Value	yash	2.49	pass
+Default Value	yash	2.50	pass
+Default Value	yash	2.51	pass
+Default Value	yash	2.52	pass
+Default Value	yash	2.53	pass
+Default Value	yash	2.54	pass
+Default Value	yash	2.55	pass
+Default Value	yash	2.56.1	pass
+Default Value	yash	2.57	pass
+Default Value	yash	2.58.1	pass
+Default Value	yash	2.59	pass
+Default Value	yash	2.60	pass
+Default Value	yash	2.61	pass
+Default Value	zsh	4.0.9	pass
+Default Value	zsh	4.2.7	pass
+Default Value	zsh	5.0.8	pass
+Default Value	zsh	5.1.1	pass
+Default Value	zsh	5.2	pass
+Default Value	zsh	5.3.1	pass
+Default Value	zsh	5.4.2	pass
+Default Value	zsh	5.5.1	pass
+Default Value	zsh	5.6.2	pass
+Default Value	zsh	5.7.1	pass
+Default Value	zsh	5.8.1	pass
+Default Value	zsh	5.9.1	pass
+Remove Largest Prefix	ash	1.2.2	pass
+Remove Largest Prefix	ash	1.2.2.1	pass
+Remove Largest Prefix	ash	1.19.4	pass
+Remove Largest Prefix	ash	1.20.2	pass
+Remove Largest Prefix	ash	1.21.1	pass
+Remove Largest Prefix	ash	1.22.1	pass
+Remove Largest Prefix	ash	1.23.2	pass
+Remove Largest Prefix	ash	1.24.2	pass
+Remove Largest Prefix	ash	1.25.1	pass
+Remove Largest Prefix	ash	1.26.2	pass
+Remove Largest Prefix	ash	1.27.2	pass
+Remove Largest Prefix	ash	1.28.4	pass
+Remove Largest Prefix	ash	1.29.3	pass
+Remove Largest Prefix	ash	1.30.1	pass
+Remove Largest Prefix	ash	1.31.1	pass
+Remove Largest Prefix	ash	1.32.1	pass
+Remove Largest Prefix	ash	1.33.2	pass
+Remove Largest Prefix	ash	1.34.1	pass
+Remove Largest Prefix	ash	1.35.0	pass
+Remove Largest Prefix	ash	1.36.1	pass
+Remove Largest Prefix	ash	1.37.0	pass
+Remove Largest Prefix	ash	1.38.0	pass
+Remove Largest Prefix	bash	2.01.0	pass
+Remove Largest Prefix	bash	2.02.0	pass
+Remove Largest Prefix	bash	2.03.0	pass
+Remove Largest Prefix	bash	2.04.0	pass
+Remove Largest Prefix	bash	2.05a.0	pass
+Remove Largest Prefix	bash	2.05b.13	pass
+Remove Largest Prefix	bash	2.05.0	pass
+Remove Largest Prefix	bash	3.0.22	pass
+Remove Largest Prefix	bash	3.1.23	pass
+Remove Largest Prefix	bash	3.2.57	pass
+Remove Largest Prefix	bash	4.0.44	pass
+Remove Largest Prefix	bash	4.1.17	pass
+Remove Largest Prefix	bash	4.2.53	pass
+Remove Largest Prefix	bash	4.3.48	pass
+Remove Largest Prefix	bash	4.4.23	pass
+Remove Largest Prefix	bash	5.0.18	pass
+Remove Largest Prefix	bash	5.1.16	pass
+Remove Largest Prefix	bash	5.2.37	pass
+Remove Largest Prefix	bash	5.3.9	pass
+Remove Largest Prefix	brush	0.2.23	pass
+Remove Largest Prefix	brush	0.3.0	pass
+Remove Largest Prefix	brush	0.4.0	pass
+Remove Largest Prefix	dash	0.5.3	pass
+Remove Largest Prefix	dash	0.5.4	pass
+Remove Largest Prefix	dash	0.5.5.1	pass
+Remove Largest Prefix	dash	0.5.6.1	pass
+Remove Largest Prefix	dash	0.5.7	pass
+Remove Largest Prefix	dash	0.5.8	pass
+Remove Largest Prefix	dash	0.5.9.1	pass
+Remove Largest Prefix	dash	0.5.10.2	pass
+Remove Largest Prefix	dash	0.5.11.5	pass
+Remove Largest Prefix	dash	0.5.12	pass
+Remove Largest Prefix	dash	0.5.13.4	pass
+Remove Largest Prefix	hush	1.19.4	pass
+Remove Largest Prefix	hush	1.20.2	pass
+Remove Largest Prefix	hush	1.21.1	pass
+Remove Largest Prefix	hush	1.22.1	pass
+Remove Largest Prefix	hush	1.23.2	pass
+Remove Largest Prefix	hush	1.24.2	pass
+Remove Largest Prefix	hush	1.25.1	pass
+Remove Largest Prefix	hush	1.26.2	pass
+Remove Largest Prefix	hush	1.27.2	pass
+Remove Largest Prefix	hush	1.28.4	pass
+Remove Largest Prefix	hush	1.29.3	pass
+Remove Largest Prefix	hush	1.30.1	pass
+Remove Largest Prefix	hush	1.31.1	pass
+Remove Largest Prefix	hush	1.32.1	pass
+Remove Largest Prefix	hush	1.33.2	pass
+Remove Largest Prefix	hush	1.34.1	pass
+Remove Largest Prefix	hush	1.35.0	pass
+Remove Largest Prefix	hush	1.36.1	pass
+Remove Largest Prefix	hush	1.37.0	pass
+Remove Largest Prefix	hush	1.38.0	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.1	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.2	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.3	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.4	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.6	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.7	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.8	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.9	pass
+Remove Largest Prefix	ksh	shvrA93uplusm-v1.0.10	pass
+Remove Largest Prefix	ksh	shvrB2020-2020.0.0	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2007-01-11	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2008-02-02	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2008-06-08	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2008-11-04	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2010-06-21	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2010-10-26	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2011-03-10	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2012-08-01	pass
+Remove Largest Prefix	ksh	shvrChistory-b_2016-01-10	pass
+Remove Largest Prefix	loksh	6.7.5	pass
+Remove Largest Prefix	loksh	6.8.1	pass
+Remove Largest Prefix	loksh	6.9	pass
+Remove Largest Prefix	loksh	7.0	pass
+Remove Largest Prefix	loksh	7.1	pass
+Remove Largest Prefix	loksh	7.2	pass
+Remove Largest Prefix	loksh	7.3	pass
+Remove Largest Prefix	loksh	7.4	pass
+Remove Largest Prefix	loksh	7.5	pass
+Remove Largest Prefix	loksh	7.6	pass
+Remove Largest Prefix	loksh	7.7	pass
+Remove Largest Prefix	loksh	7.8	pass
+Remove Largest Prefix	loksh	7.9	pass
+Remove Largest Prefix	mksh	R30	pass
+Remove Largest Prefix	mksh	R31d	pass
+Remove Largest Prefix	mksh	R32	pass
+Remove Largest Prefix	mksh	R33d	pass
+Remove Largest Prefix	mksh	R35b	pass
+Remove Largest Prefix	mksh	R36b	pass
+Remove Largest Prefix	mksh	R37c	pass
+Remove Largest Prefix	mksh	R38c	pass
+Remove Largest Prefix	mksh	R39c	pass
+Remove Largest Prefix	mksh	R40f	pass
+Remove Largest Prefix	mksh	R41c	pass
+Remove Largest Prefix	mksh	R42b	pass
+Remove Largest Prefix	mksh	R43	pass
+Remove Largest Prefix	mksh	R44	pass
+Remove Largest Prefix	mksh	R45	pass
+Remove Largest Prefix	mksh	R46	pass
+Remove Largest Prefix	mksh	R47	pass
+Remove Largest Prefix	mksh	R48b	pass
+Remove Largest Prefix	mksh	R49	pass
+Remove Largest Prefix	mksh	R50f	pass
+Remove Largest Prefix	mksh	R51	pass
+Remove Largest Prefix	mksh	R52c	pass
+Remove Largest Prefix	mksh	R53a	pass
+Remove Largest Prefix	mksh	R54	pass
+Remove Largest Prefix	mksh	R55	pass
+Remove Largest Prefix	mksh	R56c	pass
+Remove Largest Prefix	mksh	R57	pass
+Remove Largest Prefix	mksh	R58	pass
+Remove Largest Prefix	mksh	R59c	pass
+Remove Largest Prefix	oksh	6.5	pass
+Remove Largest Prefix	oksh	6.6	pass
+Remove Largest Prefix	oksh	6.7.1	pass
+Remove Largest Prefix	oksh	6.8.1	pass
+Remove Largest Prefix	oksh	6.9	pass
+Remove Largest Prefix	oksh	7.0	pass
+Remove Largest Prefix	oksh	7.1	pass
+Remove Largest Prefix	oksh	7.2	pass
+Remove Largest Prefix	oksh	7.3	pass
+Remove Largest Prefix	oksh	7.4	pass
+Remove Largest Prefix	oksh	7.5	pass
+Remove Largest Prefix	oksh	7.6	pass
+Remove Largest Prefix	oksh	7.7	pass
+Remove Largest Prefix	oksh	7.8	pass
+Remove Largest Prefix	oksh	7.9	pass
+Remove Largest Prefix	osh	0.25.0	pass
+Remove Largest Prefix	osh	0.26.0	pass
+Remove Largest Prefix	osh	0.27.0	pass
+Remove Largest Prefix	osh	0.28.0	pass
+Remove Largest Prefix	osh	0.29.0	pass
+Remove Largest Prefix	osh	0.30.0	pass
+Remove Largest Prefix	osh	0.31.0	pass
+Remove Largest Prefix	osh	0.32.0	pass
+Remove Largest Prefix	osh	0.33.0	pass
+Remove Largest Prefix	osh	0.34.0	pass
+Remove Largest Prefix	osh	0.35.0	pass
+Remove Largest Prefix	osh	0.36.0	pass
+Remove Largest Prefix	osh	0.37.0	pass
+Remove Largest Prefix	posh	0.12.6	pass
+Remove Largest Prefix	posh	0.13.2	pass
+Remove Largest Prefix	posh	0.14.5	pass
+Remove Largest Prefix	yashrs	0.3.0	pass
+Remove Largest Prefix	yashrs	0.4.0	pass
+Remove Largest Prefix	yashrs	0.4.1	pass
+Remove Largest Prefix	yashrs	0.4.2	pass
+Remove Largest Prefix	yashrs	0.4.3	pass
+Remove Largest Prefix	yashrs	0.4.4	pass
+Remove Largest Prefix	yashrs	0.4.5	pass
+Remove Largest Prefix	yashrs	3.0.0	pass
+Remove Largest Prefix	yashrs	3.0.1	pass
+Remove Largest Prefix	yashrs	3.0.2	pass
+Remove Largest Prefix	yashrs	3.0.3	pass
+Remove Largest Prefix	yashrs	3.0.4	pass
+Remove Largest Prefix	yashrs	3.0.5	pass
+Remove Largest Prefix	yashrs	3.0.7	pass
+Remove Largest Prefix	yashrs	3.0.8	pass
+Remove Largest Prefix	yashrs	3.1.0	pass
+Remove Largest Prefix	yashrs	3.2.0	pass
+Remove Largest Prefix	yash	2.10	pass
+Remove Largest Prefix	yash	2.11	pass
+Remove Largest Prefix	yash	2.12	pass
+Remove Largest Prefix	yash	2.13	pass
+Remove Largest Prefix	yash	2.14	pass
+Remove Largest Prefix	yash	2.15	pass
+Remove Largest Prefix	yash	2.16	pass
+Remove Largest Prefix	yash	2.17	pass
+Remove Largest Prefix	yash	2.18	pass
+Remove Largest Prefix	yash	2.19	pass
+Remove Largest Prefix	yash	2.20	pass
+Remove Largest Prefix	yash	2.21	pass
+Remove Largest Prefix	yash	2.22	pass
+Remove Largest Prefix	yash	2.23	pass
+Remove Largest Prefix	yash	2.24	pass
+Remove Largest Prefix	yash	2.25	pass
+Remove Largest Prefix	yash	2.26.1	pass
+Remove Largest Prefix	yash	2.27	pass
+Remove Largest Prefix	yash	2.28	pass
+Remove Largest Prefix	yash	2.29	pass
+Remove Largest Prefix	yash	2.30	pass
+Remove Largest Prefix	yash	2.31	pass
+Remove Largest Prefix	yash	2.32.1	pass
+Remove Largest Prefix	yash	2.33.1	pass
+Remove Largest Prefix	yash	2.34	pass
+Remove Largest Prefix	yash	2.35	pass
+Remove Largest Prefix	yash	2.36	pass
+Remove Largest Prefix	yash	2.37	pass
+Remove Largest Prefix	yash	2.38	pass
+Remove Largest Prefix	yash	2.39	pass
+Remove Largest Prefix	yash	2.40	pass
+Remove Largest Prefix	yash	2.41	pass
+Remove Largest Prefix	yash	2.42	pass
+Remove Largest Prefix	yash	2.43	pass
+Remove Largest Prefix	yash	2.44	pass
+Remove Largest Prefix	yash	2.45	pass
+Remove Largest Prefix	yash	2.46	pass
+Remove Largest Prefix	yash	2.47	pass
+Remove Largest Prefix	yash	2.48	pass
+Remove Largest Prefix	yash	2.49	pass
+Remove Largest Prefix	yash	2.50	pass
+Remove Largest Prefix	yash	2.51	pass
+Remove Largest Prefix	yash	2.52	pass
+Remove Largest Prefix	yash	2.53	pass
+Remove Largest Prefix	yash	2.54	pass
+Remove Largest Prefix	yash	2.55	pass
+Remove Largest Prefix	yash	2.56.1	pass
+Remove Largest Prefix	yash	2.57	pass
+Remove Largest Prefix	yash	2.58.1	pass
+Remove Largest Prefix	yash	2.59	pass
+Remove Largest Prefix	yash	2.60	pass
+Remove Largest Prefix	yash	2.61	pass
+Remove Largest Prefix	zsh	4.0.9	pass
+Remove Largest Prefix	zsh	4.2.7	pass
+Remove Largest Prefix	zsh	5.0.8	pass
+Remove Largest Prefix	zsh	5.1.1	pass
+Remove Largest Prefix	zsh	5.2	pass
+Remove Largest Prefix	zsh	5.3.1	pass
+Remove Largest Prefix	zsh	5.4.2	pass
+Remove Largest Prefix	zsh	5.5.1	pass
+Remove Largest Prefix	zsh	5.6.2	pass
+Remove Largest Prefix	zsh	5.7.1	pass
+Remove Largest Prefix	zsh	5.8.1	pass
+Remove Largest Prefix	zsh	5.9.1	pass
+Remove Largest Suffix	ash	1.2.2	pass
+Remove Largest Suffix	ash	1.2.2.1	pass
+Remove Largest Suffix	ash	1.19.4	pass
+Remove Largest Suffix	ash	1.20.2	pass
+Remove Largest Suffix	ash	1.21.1	pass
+Remove Largest Suffix	ash	1.22.1	pass
+Remove Largest Suffix	ash	1.23.2	pass
+Remove Largest Suffix	ash	1.24.2	pass
+Remove Largest Suffix	ash	1.25.1	pass
+Remove Largest Suffix	ash	1.26.2	pass
+Remove Largest Suffix	ash	1.27.2	pass
+Remove Largest Suffix	ash	1.28.4	pass
+Remove Largest Suffix	ash	1.29.3	pass
+Remove Largest Suffix	ash	1.30.1	pass
+Remove Largest Suffix	ash	1.31.1	pass
+Remove Largest Suffix	ash	1.32.1	pass
+Remove Largest Suffix	ash	1.33.2	pass
+Remove Largest Suffix	ash	1.34.1	pass
+Remove Largest Suffix	ash	1.35.0	pass
+Remove Largest Suffix	ash	1.36.1	pass
+Remove Largest Suffix	ash	1.37.0	pass
+Remove Largest Suffix	ash	1.38.0	pass
+Remove Largest Suffix	bash	2.01.0	pass
+Remove Largest Suffix	bash	2.02.0	pass
+Remove Largest Suffix	bash	2.03.0	pass
+Remove Largest Suffix	bash	2.04.0	pass
+Remove Largest Suffix	bash	2.05a.0	pass
+Remove Largest Suffix	bash	2.05b.13	pass
+Remove Largest Suffix	bash	2.05.0	pass
+Remove Largest Suffix	bash	3.0.22	pass
+Remove Largest Suffix	bash	3.1.23	pass
+Remove Largest Suffix	bash	3.2.57	pass
+Remove Largest Suffix	bash	4.0.44	pass
+Remove Largest Suffix	bash	4.1.17	pass
+Remove Largest Suffix	bash	4.2.53	pass
+Remove Largest Suffix	bash	4.3.48	pass
+Remove Largest Suffix	bash	4.4.23	pass
+Remove Largest Suffix	bash	5.0.18	pass
+Remove Largest Suffix	bash	5.1.16	pass
+Remove Largest Suffix	bash	5.2.37	pass
+Remove Largest Suffix	bash	5.3.9	pass
+Remove Largest Suffix	brush	0.2.23	pass
+Remove Largest Suffix	brush	0.3.0	pass
+Remove Largest Suffix	brush	0.4.0	pass
+Remove Largest Suffix	dash	0.5.3	pass
+Remove Largest Suffix	dash	0.5.4	pass
+Remove Largest Suffix	dash	0.5.5.1	pass
+Remove Largest Suffix	dash	0.5.6.1	pass
+Remove Largest Suffix	dash	0.5.7	pass
+Remove Largest Suffix	dash	0.5.8	pass
+Remove Largest Suffix	dash	0.5.9.1	pass
+Remove Largest Suffix	dash	0.5.10.2	pass
+Remove Largest Suffix	dash	0.5.11.5	pass
+Remove Largest Suffix	dash	0.5.12	pass
+Remove Largest Suffix	dash	0.5.13.4	pass
+Remove Largest Suffix	hush	1.19.4	pass
+Remove Largest Suffix	hush	1.20.2	pass
+Remove Largest Suffix	hush	1.21.1	pass
+Remove Largest Suffix	hush	1.22.1	pass
+Remove Largest Suffix	hush	1.23.2	pass
+Remove Largest Suffix	hush	1.24.2	pass
+Remove Largest Suffix	hush	1.25.1	pass
+Remove Largest Suffix	hush	1.26.2	pass
+Remove Largest Suffix	hush	1.27.2	pass
+Remove Largest Suffix	hush	1.28.4	pass
+Remove Largest Suffix	hush	1.29.3	pass
+Remove Largest Suffix	hush	1.30.1	pass
+Remove Largest Suffix	hush	1.31.1	pass
+Remove Largest Suffix	hush	1.32.1	pass
+Remove Largest Suffix	hush	1.33.2	pass
+Remove Largest Suffix	hush	1.34.1	pass
+Remove Largest Suffix	hush	1.35.0	pass
+Remove Largest Suffix	hush	1.36.1	pass
+Remove Largest Suffix	hush	1.37.0	pass
+Remove Largest Suffix	hush	1.38.0	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.1	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.2	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.3	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.4	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.6	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.7	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.8	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.9	pass
+Remove Largest Suffix	ksh	shvrA93uplusm-v1.0.10	pass
+Remove Largest Suffix	ksh	shvrB2020-2020.0.0	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2007-01-11	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2008-02-02	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2008-06-08	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2008-11-04	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2010-06-21	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2010-10-26	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2011-03-10	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2012-08-01	pass
+Remove Largest Suffix	ksh	shvrChistory-b_2016-01-10	pass
+Remove Largest Suffix	loksh	6.7.5	pass
+Remove Largest Suffix	loksh	6.8.1	pass
+Remove Largest Suffix	loksh	6.9	pass
+Remove Largest Suffix	loksh	7.0	pass
+Remove Largest Suffix	loksh	7.1	pass
+Remove Largest Suffix	loksh	7.2	pass
+Remove Largest Suffix	loksh	7.3	pass
+Remove Largest Suffix	loksh	7.4	pass
+Remove Largest Suffix	loksh	7.5	pass
+Remove Largest Suffix	loksh	7.6	pass
+Remove Largest Suffix	loksh	7.7	pass
+Remove Largest Suffix	loksh	7.8	pass
+Remove Largest Suffix	loksh	7.9	pass
+Remove Largest Suffix	mksh	R30	pass
+Remove Largest Suffix	mksh	R31d	pass
+Remove Largest Suffix	mksh	R32	pass
+Remove Largest Suffix	mksh	R33d	pass
+Remove Largest Suffix	mksh	R35b	pass
+Remove Largest Suffix	mksh	R36b	pass
+Remove Largest Suffix	mksh	R37c	pass
+Remove Largest Suffix	mksh	R38c	pass
+Remove Largest Suffix	mksh	R39c	pass
+Remove Largest Suffix	mksh	R40f	pass
+Remove Largest Suffix	mksh	R41c	pass
+Remove Largest Suffix	mksh	R42b	pass
+Remove Largest Suffix	mksh	R43	pass
+Remove Largest Suffix	mksh	R44	pass
+Remove Largest Suffix	mksh	R45	pass
+Remove Largest Suffix	mksh	R46	pass
+Remove Largest Suffix	mksh	R47	pass
+Remove Largest Suffix	mksh	R48b	pass
+Remove Largest Suffix	mksh	R49	pass
+Remove Largest Suffix	mksh	R50f	pass
+Remove Largest Suffix	mksh	R51	pass
+Remove Largest Suffix	mksh	R52c	pass
+Remove Largest Suffix	mksh	R53a	pass
+Remove Largest Suffix	mksh	R54	pass
+Remove Largest Suffix	mksh	R55	pass
+Remove Largest Suffix	mksh	R56c	pass
+Remove Largest Suffix	mksh	R57	pass
+Remove Largest Suffix	mksh	R58	pass
+Remove Largest Suffix	mksh	R59c	pass
+Remove Largest Suffix	oksh	6.5	pass
+Remove Largest Suffix	oksh	6.6	pass
+Remove Largest Suffix	oksh	6.7.1	pass
+Remove Largest Suffix	oksh	6.8.1	pass
+Remove Largest Suffix	oksh	6.9	pass
+Remove Largest Suffix	oksh	7.0	pass
+Remove Largest Suffix	oksh	7.1	pass
+Remove Largest Suffix	oksh	7.2	pass
+Remove Largest Suffix	oksh	7.3	pass
+Remove Largest Suffix	oksh	7.4	pass
+Remove Largest Suffix	oksh	7.5	pass
+Remove Largest Suffix	oksh	7.6	pass
+Remove Largest Suffix	oksh	7.7	pass
+Remove Largest Suffix	oksh	7.8	pass
+Remove Largest Suffix	oksh	7.9	pass
+Remove Largest Suffix	osh	0.25.0	pass
+Remove Largest Suffix	osh	0.26.0	pass
+Remove Largest Suffix	osh	0.27.0	pass
+Remove Largest Suffix	osh	0.28.0	pass
+Remove Largest Suffix	osh	0.29.0	pass
+Remove Largest Suffix	osh	0.30.0	pass
+Remove Largest Suffix	osh	0.31.0	pass
+Remove Largest Suffix	osh	0.32.0	pass
+Remove Largest Suffix	osh	0.33.0	pass
+Remove Largest Suffix	osh	0.34.0	pass
+Remove Largest Suffix	osh	0.35.0	pass
+Remove Largest Suffix	osh	0.36.0	pass
+Remove Largest Suffix	osh	0.37.0	pass
+Remove Largest Suffix	posh	0.12.6	pass
+Remove Largest Suffix	posh	0.13.2	pass
+Remove Largest Suffix	posh	0.14.5	pass
+Remove Largest Suffix	yashrs	0.3.0	pass
+Remove Largest Suffix	yashrs	0.4.0	pass
+Remove Largest Suffix	yashrs	0.4.1	pass
+Remove Largest Suffix	yashrs	0.4.2	pass
+Remove Largest Suffix	yashrs	0.4.3	pass
+Remove Largest Suffix	yashrs	0.4.4	pass
+Remove Largest Suffix	yashrs	0.4.5	pass
+Remove Largest Suffix	yashrs	3.0.0	pass
+Remove Largest Suffix	yashrs	3.0.1	pass
+Remove Largest Suffix	yashrs	3.0.2	pass
+Remove Largest Suffix	yashrs	3.0.3	pass
+Remove Largest Suffix	yashrs	3.0.4	pass
+Remove Largest Suffix	yashrs	3.0.5	pass
+Remove Largest Suffix	yashrs	3.0.7	pass
+Remove Largest Suffix	yashrs	3.0.8	pass
+Remove Largest Suffix	yashrs	3.1.0	pass
+Remove Largest Suffix	yashrs	3.2.0	pass
+Remove Largest Suffix	yash	2.10	pass
+Remove Largest Suffix	yash	2.11	pass
+Remove Largest Suffix	yash	2.12	pass
+Remove Largest Suffix	yash	2.13	pass
+Remove Largest Suffix	yash	2.14	pass
+Remove Largest Suffix	yash	2.15	pass
+Remove Largest Suffix	yash	2.16	pass
+Remove Largest Suffix	yash	2.17	pass
+Remove Largest Suffix	yash	2.18	pass
+Remove Largest Suffix	yash	2.19	pass
+Remove Largest Suffix	yash	2.20	pass
+Remove Largest Suffix	yash	2.21	pass
+Remove Largest Suffix	yash	2.22	pass
+Remove Largest Suffix	yash	2.23	pass
+Remove Largest Suffix	yash	2.24	pass
+Remove Largest Suffix	yash	2.25	pass
+Remove Largest Suffix	yash	2.26.1	pass
+Remove Largest Suffix	yash	2.27	pass
+Remove Largest Suffix	yash	2.28	pass
+Remove Largest Suffix	yash	2.29	pass
+Remove Largest Suffix	yash	2.30	pass
+Remove Largest Suffix	yash	2.31	pass
+Remove Largest Suffix	yash	2.32.1	pass
+Remove Largest Suffix	yash	2.33.1	pass
+Remove Largest Suffix	yash	2.34	pass
+Remove Largest Suffix	yash	2.35	pass
+Remove Largest Suffix	yash	2.36	pass
+Remove Largest Suffix	yash	2.37	pass
+Remove Largest Suffix	yash	2.38	pass
+Remove Largest Suffix	yash	2.39	pass
+Remove Largest Suffix	yash	2.40	pass
+Remove Largest Suffix	yash	2.41	pass
+Remove Largest Suffix	yash	2.42	pass
+Remove Largest Suffix	yash	2.43	pass
+Remove Largest Suffix	yash	2.44	pass
+Remove Largest Suffix	yash	2.45	pass
+Remove Largest Suffix	yash	2.46	pass
+Remove Largest Suffix	yash	2.47	pass
+Remove Largest Suffix	yash	2.48	pass
+Remove Largest Suffix	yash	2.49	pass
+Remove Largest Suffix	yash	2.50	pass
+Remove Largest Suffix	yash	2.51	pass
+Remove Largest Suffix	yash	2.52	pass
+Remove Largest Suffix	yash	2.53	pass
+Remove Largest Suffix	yash	2.54	pass
+Remove Largest Suffix	yash	2.55	pass
+Remove Largest Suffix	yash	2.56.1	pass
+Remove Largest Suffix	yash	2.57	pass
+Remove Largest Suffix	yash	2.58.1	pass
+Remove Largest Suffix	yash	2.59	pass
+Remove Largest Suffix	yash	2.60	pass
+Remove Largest Suffix	yash	2.61	pass
+Remove Largest Suffix	zsh	4.0.9	pass
+Remove Largest Suffix	zsh	4.2.7	pass
+Remove Largest Suffix	zsh	5.0.8	pass
+Remove Largest Suffix	zsh	5.1.1	pass
+Remove Largest Suffix	zsh	5.2	pass
+Remove Largest Suffix	zsh	5.3.1	pass
+Remove Largest Suffix	zsh	5.4.2	pass
+Remove Largest Suffix	zsh	5.5.1	pass
+Remove Largest Suffix	zsh	5.6.2	pass
+Remove Largest Suffix	zsh	5.7.1	pass
+Remove Largest Suffix	zsh	5.8.1	pass
+Remove Largest Suffix	zsh	5.9.1	pass
+Remove Smallest Prefix	ash	1.2.2	pass
+Remove Smallest Prefix	ash	1.2.2.1	pass
+Remove Smallest Prefix	ash	1.19.4	pass
+Remove Smallest Prefix	ash	1.20.2	pass
+Remove Smallest Prefix	ash	1.21.1	pass
+Remove Smallest Prefix	ash	1.22.1	pass
+Remove Smallest Prefix	ash	1.23.2	pass
+Remove Smallest Prefix	ash	1.24.2	pass
+Remove Smallest Prefix	ash	1.25.1	pass
+Remove Smallest Prefix	ash	1.26.2	pass
+Remove Smallest Prefix	ash	1.27.2	pass
+Remove Smallest Prefix	ash	1.28.4	pass
+Remove Smallest Prefix	ash	1.29.3	pass
+Remove Smallest Prefix	ash	1.30.1	pass
+Remove Smallest Prefix	ash	1.31.1	pass
+Remove Smallest Prefix	ash	1.32.1	pass
+Remove Smallest Prefix	ash	1.33.2	pass
+Remove Smallest Prefix	ash	1.34.1	pass
+Remove Smallest Prefix	ash	1.35.0	pass
+Remove Smallest Prefix	ash	1.36.1	pass
+Remove Smallest Prefix	ash	1.37.0	pass
+Remove Smallest Prefix	ash	1.38.0	pass
+Remove Smallest Prefix	bash	2.01.0	pass
+Remove Smallest Prefix	bash	2.02.0	pass
+Remove Smallest Prefix	bash	2.03.0	pass
+Remove Smallest Prefix	bash	2.04.0	pass
+Remove Smallest Prefix	bash	2.05a.0	pass
+Remove Smallest Prefix	bash	2.05b.13	pass
+Remove Smallest Prefix	bash	2.05.0	pass
+Remove Smallest Prefix	bash	3.0.22	pass
+Remove Smallest Prefix	bash	3.1.23	pass
+Remove Smallest Prefix	bash	3.2.57	pass
+Remove Smallest Prefix	bash	4.0.44	pass
+Remove Smallest Prefix	bash	4.1.17	pass
+Remove Smallest Prefix	bash	4.2.53	pass
+Remove Smallest Prefix	bash	4.3.48	pass
+Remove Smallest Prefix	bash	4.4.23	pass
+Remove Smallest Prefix	bash	5.0.18	pass
+Remove Smallest Prefix	bash	5.1.16	pass
+Remove Smallest Prefix	bash	5.2.37	pass
+Remove Smallest Prefix	bash	5.3.9	pass
+Remove Smallest Prefix	brush	0.2.23	pass
+Remove Smallest Prefix	brush	0.3.0	pass
+Remove Smallest Prefix	brush	0.4.0	pass
+Remove Smallest Prefix	dash	0.5.3	pass
+Remove Smallest Prefix	dash	0.5.4	pass
+Remove Smallest Prefix	dash	0.5.5.1	pass
+Remove Smallest Prefix	dash	0.5.6.1	pass
+Remove Smallest Prefix	dash	0.5.7	pass
+Remove Smallest Prefix	dash	0.5.8	pass
+Remove Smallest Prefix	dash	0.5.9.1	pass
+Remove Smallest Prefix	dash	0.5.10.2	pass
+Remove Smallest Prefix	dash	0.5.11.5	pass
+Remove Smallest Prefix	dash	0.5.12	pass
+Remove Smallest Prefix	dash	0.5.13.4	pass
+Remove Smallest Prefix	hush	1.19.4	pass
+Remove Smallest Prefix	hush	1.20.2	pass
+Remove Smallest Prefix	hush	1.21.1	pass
+Remove Smallest Prefix	hush	1.22.1	pass
+Remove Smallest Prefix	hush	1.23.2	pass
+Remove Smallest Prefix	hush	1.24.2	pass
+Remove Smallest Prefix	hush	1.25.1	pass
+Remove Smallest Prefix	hush	1.26.2	pass
+Remove Smallest Prefix	hush	1.27.2	pass
+Remove Smallest Prefix	hush	1.28.4	pass
+Remove Smallest Prefix	hush	1.29.3	pass
+Remove Smallest Prefix	hush	1.30.1	pass
+Remove Smallest Prefix	hush	1.31.1	pass
+Remove Smallest Prefix	hush	1.32.1	pass
+Remove Smallest Prefix	hush	1.33.2	pass
+Remove Smallest Prefix	hush	1.34.1	pass
+Remove Smallest Prefix	hush	1.35.0	pass
+Remove Smallest Prefix	hush	1.36.1	pass
+Remove Smallest Prefix	hush	1.37.0	pass
+Remove Smallest Prefix	hush	1.38.0	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.1	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.2	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.3	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.4	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.6	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.7	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.8	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.9	pass
+Remove Smallest Prefix	ksh	shvrA93uplusm-v1.0.10	pass
+Remove Smallest Prefix	ksh	shvrB2020-2020.0.0	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2007-01-11	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2008-02-02	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2008-06-08	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2008-11-04	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2010-06-21	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2010-10-26	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2011-03-10	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2012-08-01	pass
+Remove Smallest Prefix	ksh	shvrChistory-b_2016-01-10	pass
+Remove Smallest Prefix	loksh	6.7.5	pass
+Remove Smallest Prefix	loksh	6.8.1	pass
+Remove Smallest Prefix	loksh	6.9	pass
+Remove Smallest Prefix	loksh	7.0	pass
+Remove Smallest Prefix	loksh	7.1	pass
+Remove Smallest Prefix	loksh	7.2	pass
+Remove Smallest Prefix	loksh	7.3	pass
+Remove Smallest Prefix	loksh	7.4	pass
+Remove Smallest Prefix	loksh	7.5	pass
+Remove Smallest Prefix	loksh	7.6	pass
+Remove Smallest Prefix	loksh	7.7	pass
+Remove Smallest Prefix	loksh	7.8	pass
+Remove Smallest Prefix	loksh	7.9	pass
+Remove Smallest Prefix	mksh	R30	pass
+Remove Smallest Prefix	mksh	R31d	pass
+Remove Smallest Prefix	mksh	R32	pass
+Remove Smallest Prefix	mksh	R33d	pass
+Remove Smallest Prefix	mksh	R35b	pass
+Remove Smallest Prefix	mksh	R36b	pass
+Remove Smallest Prefix	mksh	R37c	pass
+Remove Smallest Prefix	mksh	R38c	pass
+Remove Smallest Prefix	mksh	R39c	pass
+Remove Smallest Prefix	mksh	R40f	pass
+Remove Smallest Prefix	mksh	R41c	pass
+Remove Smallest Prefix	mksh	R42b	pass
+Remove Smallest Prefix	mksh	R43	pass
+Remove Smallest Prefix	mksh	R44	pass
+Remove Smallest Prefix	mksh	R45	pass
+Remove Smallest Prefix	mksh	R46	pass
+Remove Smallest Prefix	mksh	R47	pass
+Remove Smallest Prefix	mksh	R48b	pass
+Remove Smallest Prefix	mksh	R49	pass
+Remove Smallest Prefix	mksh	R50f	pass
+Remove Smallest Prefix	mksh	R51	pass
+Remove Smallest Prefix	mksh	R52c	pass
+Remove Smallest Prefix	mksh	R53a	pass
+Remove Smallest Prefix	mksh	R54	pass
+Remove Smallest Prefix	mksh	R55	pass
+Remove Smallest Prefix	mksh	R56c	pass
+Remove Smallest Prefix	mksh	R57	pass
+Remove Smallest Prefix	mksh	R58	pass
+Remove Smallest Prefix	mksh	R59c	pass
+Remove Smallest Prefix	oksh	6.5	pass
+Remove Smallest Prefix	oksh	6.6	pass
+Remove Smallest Prefix	oksh	6.7.1	pass
+Remove Smallest Prefix	oksh	6.8.1	pass
+Remove Smallest Prefix	oksh	6.9	pass
+Remove Smallest Prefix	oksh	7.0	pass
+Remove Smallest Prefix	oksh	7.1	pass
+Remove Smallest Prefix	oksh	7.2	pass
+Remove Smallest Prefix	oksh	7.3	pass
+Remove Smallest Prefix	oksh	7.4	pass
+Remove Smallest Prefix	oksh	7.5	pass
+Remove Smallest Prefix	oksh	7.6	pass
+Remove Smallest Prefix	oksh	7.7	pass
+Remove Smallest Prefix	oksh	7.8	pass
+Remove Smallest Prefix	oksh	7.9	pass
+Remove Smallest Prefix	osh	0.25.0	pass
+Remove Smallest Prefix	osh	0.26.0	pass
+Remove Smallest Prefix	osh	0.27.0	pass
+Remove Smallest Prefix	osh	0.28.0	pass
+Remove Smallest Prefix	osh	0.29.0	pass
+Remove Smallest Prefix	osh	0.30.0	pass
+Remove Smallest Prefix	osh	0.31.0	pass
+Remove Smallest Prefix	osh	0.32.0	pass
+Remove Smallest Prefix	osh	0.33.0	pass
+Remove Smallest Prefix	osh	0.34.0	pass
+Remove Smallest Prefix	osh	0.35.0	pass
+Remove Smallest Prefix	osh	0.36.0	pass
+Remove Smallest Prefix	osh	0.37.0	pass
+Remove Smallest Prefix	posh	0.12.6	pass
+Remove Smallest Prefix	posh	0.13.2	pass
+Remove Smallest Prefix	posh	0.14.5	pass
+Remove Smallest Prefix	yashrs	0.3.0	pass
+Remove Smallest Prefix	yashrs	0.4.0	pass
+Remove Smallest Prefix	yashrs	0.4.1	pass
+Remove Smallest Prefix	yashrs	0.4.2	pass
+Remove Smallest Prefix	yashrs	0.4.3	pass
+Remove Smallest Prefix	yashrs	0.4.4	pass
+Remove Smallest Prefix	yashrs	0.4.5	pass
+Remove Smallest Prefix	yashrs	3.0.0	pass
+Remove Smallest Prefix	yashrs	3.0.1	pass
+Remove Smallest Prefix	yashrs	3.0.2	pass
+Remove Smallest Prefix	yashrs	3.0.3	pass
+Remove Smallest Prefix	yashrs	3.0.4	pass
+Remove Smallest Prefix	yashrs	3.0.5	pass
+Remove Smallest Prefix	yashrs	3.0.7	pass
+Remove Smallest Prefix	yashrs	3.0.8	pass
+Remove Smallest Prefix	yashrs	3.1.0	pass
+Remove Smallest Prefix	yashrs	3.2.0	pass
+Remove Smallest Prefix	yash	2.10	pass
+Remove Smallest Prefix	yash	2.11	pass
+Remove Smallest Prefix	yash	2.12	pass
+Remove Smallest Prefix	yash	2.13	pass
+Remove Smallest Prefix	yash	2.14	pass
+Remove Smallest Prefix	yash	2.15	pass
+Remove Smallest Prefix	yash	2.16	pass
+Remove Smallest Prefix	yash	2.17	pass
+Remove Smallest Prefix	yash	2.18	pass
+Remove Smallest Prefix	yash	2.19	pass
+Remove Smallest Prefix	yash	2.20	pass
+Remove Smallest Prefix	yash	2.21	pass
+Remove Smallest Prefix	yash	2.22	pass
+Remove Smallest Prefix	yash	2.23	pass
+Remove Smallest Prefix	yash	2.24	pass
+Remove Smallest Prefix	yash	2.25	pass
+Remove Smallest Prefix	yash	2.26.1	pass
+Remove Smallest Prefix	yash	2.27	pass
+Remove Smallest Prefix	yash	2.28	pass
+Remove Smallest Prefix	yash	2.29	pass
+Remove Smallest Prefix	yash	2.30	pass
+Remove Smallest Prefix	yash	2.31	pass
+Remove Smallest Prefix	yash	2.32.1	pass
+Remove Smallest Prefix	yash	2.33.1	pass
+Remove Smallest Prefix	yash	2.34	pass
+Remove Smallest Prefix	yash	2.35	pass
+Remove Smallest Prefix	yash	2.36	pass
+Remove Smallest Prefix	yash	2.37	pass
+Remove Smallest Prefix	yash	2.38	pass
+Remove Smallest Prefix	yash	2.39	pass
+Remove Smallest Prefix	yash	2.40	pass
+Remove Smallest Prefix	yash	2.41	pass
+Remove Smallest Prefix	yash	2.42	pass
+Remove Smallest Prefix	yash	2.43	pass
+Remove Smallest Prefix	yash	2.44	pass
+Remove Smallest Prefix	yash	2.45	pass
+Remove Smallest Prefix	yash	2.46	pass
+Remove Smallest Prefix	yash	2.47	pass
+Remove Smallest Prefix	yash	2.48	pass
+Remove Smallest Prefix	yash	2.49	pass
+Remove Smallest Prefix	yash	2.50	pass
+Remove Smallest Prefix	yash	2.51	pass
+Remove Smallest Prefix	yash	2.52	pass
+Remove Smallest Prefix	yash	2.53	pass
+Remove Smallest Prefix	yash	2.54	pass
+Remove Smallest Prefix	yash	2.55	pass
+Remove Smallest Prefix	yash	2.56.1	pass
+Remove Smallest Prefix	yash	2.57	pass
+Remove Smallest Prefix	yash	2.58.1	pass
+Remove Smallest Prefix	yash	2.59	pass
+Remove Smallest Prefix	yash	2.60	pass
+Remove Smallest Prefix	yash	2.61	pass
+Remove Smallest Prefix	zsh	4.0.9	pass
+Remove Smallest Prefix	zsh	4.2.7	pass
+Remove Smallest Prefix	zsh	5.0.8	pass
+Remove Smallest Prefix	zsh	5.1.1	pass
+Remove Smallest Prefix	zsh	5.2	pass
+Remove Smallest Prefix	zsh	5.3.1	pass
+Remove Smallest Prefix	zsh	5.4.2	pass
+Remove Smallest Prefix	zsh	5.5.1	pass
+Remove Smallest Prefix	zsh	5.6.2	pass
+Remove Smallest Prefix	zsh	5.7.1	pass
+Remove Smallest Prefix	zsh	5.8.1	pass
+Remove Smallest Prefix	zsh	5.9.1	pass
+Remove Smallest Suffix	ash	1.2.2	pass
+Remove Smallest Suffix	ash	1.2.2.1	pass
+Remove Smallest Suffix	ash	1.19.4	pass
+Remove Smallest Suffix	ash	1.20.2	pass
+Remove Smallest Suffix	ash	1.21.1	pass
+Remove Smallest Suffix	ash	1.22.1	pass
+Remove Smallest Suffix	ash	1.23.2	pass
+Remove Smallest Suffix	ash	1.24.2	pass
+Remove Smallest Suffix	ash	1.25.1	pass
+Remove Smallest Suffix	ash	1.26.2	pass
+Remove Smallest Suffix	ash	1.27.2	pass
+Remove Smallest Suffix	ash	1.28.4	pass
+Remove Smallest Suffix	ash	1.29.3	pass
+Remove Smallest Suffix	ash	1.30.1	pass
+Remove Smallest Suffix	ash	1.31.1	pass
+Remove Smallest Suffix	ash	1.32.1	pass
+Remove Smallest Suffix	ash	1.33.2	pass
+Remove Smallest Suffix	ash	1.34.1	pass
+Remove Smallest Suffix	ash	1.35.0	pass
+Remove Smallest Suffix	ash	1.36.1	pass
+Remove Smallest Suffix	ash	1.37.0	pass
+Remove Smallest Suffix	ash	1.38.0	pass
+Remove Smallest Suffix	bash	2.01.0	pass
+Remove Smallest Suffix	bash	2.02.0	pass
+Remove Smallest Suffix	bash	2.03.0	pass
+Remove Smallest Suffix	bash	2.04.0	pass
+Remove Smallest Suffix	bash	2.05a.0	pass
+Remove Smallest Suffix	bash	2.05b.13	pass
+Remove Smallest Suffix	bash	2.05.0	pass
+Remove Smallest Suffix	bash	3.0.22	pass
+Remove Smallest Suffix	bash	3.1.23	pass
+Remove Smallest Suffix	bash	3.2.57	pass
+Remove Smallest Suffix	bash	4.0.44	pass
+Remove Smallest Suffix	bash	4.1.17	pass
+Remove Smallest Suffix	bash	4.2.53	pass
+Remove Smallest Suffix	bash	4.3.48	pass
+Remove Smallest Suffix	bash	4.4.23	pass
+Remove Smallest Suffix	bash	5.0.18	pass
+Remove Smallest Suffix	bash	5.1.16	pass
+Remove Smallest Suffix	bash	5.2.37	pass
+Remove Smallest Suffix	bash	5.3.9	pass
+Remove Smallest Suffix	brush	0.2.23	pass
+Remove Smallest Suffix	brush	0.3.0	pass
+Remove Smallest Suffix	brush	0.4.0	pass
+Remove Smallest Suffix	dash	0.5.3	pass
+Remove Smallest Suffix	dash	0.5.4	pass
+Remove Smallest Suffix	dash	0.5.5.1	pass
+Remove Smallest Suffix	dash	0.5.6.1	pass
+Remove Smallest Suffix	dash	0.5.7	pass
+Remove Smallest Suffix	dash	0.5.8	pass
+Remove Smallest Suffix	dash	0.5.9.1	pass
+Remove Smallest Suffix	dash	0.5.10.2	pass
+Remove Smallest Suffix	dash	0.5.11.5	pass
+Remove Smallest Suffix	dash	0.5.12	pass
+Remove Smallest Suffix	dash	0.5.13.4	pass
+Remove Smallest Suffix	hush	1.19.4	pass
+Remove Smallest Suffix	hush	1.20.2	pass
+Remove Smallest Suffix	hush	1.21.1	pass
+Remove Smallest Suffix	hush	1.22.1	pass
+Remove Smallest Suffix	hush	1.23.2	pass
+Remove Smallest Suffix	hush	1.24.2	pass
+Remove Smallest Suffix	hush	1.25.1	pass
+Remove Smallest Suffix	hush	1.26.2	pass
+Remove Smallest Suffix	hush	1.27.2	pass
+Remove Smallest Suffix	hush	1.28.4	pass
+Remove Smallest Suffix	hush	1.29.3	pass
+Remove Smallest Suffix	hush	1.30.1	pass
+Remove Smallest Suffix	hush	1.31.1	pass
+Remove Smallest Suffix	hush	1.32.1	pass
+Remove Smallest Suffix	hush	1.33.2	pass
+Remove Smallest Suffix	hush	1.34.1	pass
+Remove Smallest Suffix	hush	1.35.0	pass
+Remove Smallest Suffix	hush	1.36.1	pass
+Remove Smallest Suffix	hush	1.37.0	pass
+Remove Smallest Suffix	hush	1.38.0	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.1	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.2	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.3	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.4	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.6	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.7	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.8	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.9	pass
+Remove Smallest Suffix	ksh	shvrA93uplusm-v1.0.10	pass
+Remove Smallest Suffix	ksh	shvrB2020-2020.0.0	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2007-01-11	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2008-02-02	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2008-06-08	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2008-11-04	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2010-06-21	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2010-10-26	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2011-03-10	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2012-08-01	pass
+Remove Smallest Suffix	ksh	shvrChistory-b_2016-01-10	pass
+Remove Smallest Suffix	loksh	6.7.5	pass
+Remove Smallest Suffix	loksh	6.8.1	pass
+Remove Smallest Suffix	loksh	6.9	pass
+Remove Smallest Suffix	loksh	7.0	pass
+Remove Smallest Suffix	loksh	7.1	pass
+Remove Smallest Suffix	loksh	7.2	pass
+Remove Smallest Suffix	loksh	7.3	pass
+Remove Smallest Suffix	loksh	7.4	pass
+Remove Smallest Suffix	loksh	7.5	pass
+Remove Smallest Suffix	loksh	7.6	pass
+Remove Smallest Suffix	loksh	7.7	pass
+Remove Smallest Suffix	loksh	7.8	pass
+Remove Smallest Suffix	loksh	7.9	pass
+Remove Smallest Suffix	mksh	R30	pass
+Remove Smallest Suffix	mksh	R31d	pass
+Remove Smallest Suffix	mksh	R32	pass
+Remove Smallest Suffix	mksh	R33d	pass
+Remove Smallest Suffix	mksh	R35b	pass
+Remove Smallest Suffix	mksh	R36b	pass
+Remove Smallest Suffix	mksh	R37c	pass
+Remove Smallest Suffix	mksh	R38c	pass
+Remove Smallest Suffix	mksh	R39c	pass
+Remove Smallest Suffix	mksh	R40f	pass
+Remove Smallest Suffix	mksh	R41c	pass
+Remove Smallest Suffix	mksh	R42b	pass
+Remove Smallest Suffix	mksh	R43	pass
+Remove Smallest Suffix	mksh	R44	pass
+Remove Smallest Suffix	mksh	R45	pass
+Remove Smallest Suffix	mksh	R46	pass
+Remove Smallest Suffix	mksh	R47	pass
+Remove Smallest Suffix	mksh	R48b	pass
+Remove Smallest Suffix	mksh	R49	pass
+Remove Smallest Suffix	mksh	R50f	pass
+Remove Smallest Suffix	mksh	R51	pass
+Remove Smallest Suffix	mksh	R52c	pass
+Remove Smallest Suffix	mksh	R53a	pass
+Remove Smallest Suffix	mksh	R54	pass
+Remove Smallest Suffix	mksh	R55	pass
+Remove Smallest Suffix	mksh	R56c	pass
+Remove Smallest Suffix	mksh	R57	pass
+Remove Smallest Suffix	mksh	R58	pass
+Remove Smallest Suffix	mksh	R59c	pass
+Remove Smallest Suffix	oksh	6.5	pass
+Remove Smallest Suffix	oksh	6.6	pass
+Remove Smallest Suffix	oksh	6.7.1	pass
+Remove Smallest Suffix	oksh	6.8.1	pass
+Remove Smallest Suffix	oksh	6.9	pass
+Remove Smallest Suffix	oksh	7.0	pass
+Remove Smallest Suffix	oksh	7.1	pass
+Remove Smallest Suffix	oksh	7.2	pass
+Remove Smallest Suffix	oksh	7.3	pass
+Remove Smallest Suffix	oksh	7.4	pass
+Remove Smallest Suffix	oksh	7.5	pass
+Remove Smallest Suffix	oksh	7.6	pass
+Remove Smallest Suffix	oksh	7.7	pass
+Remove Smallest Suffix	oksh	7.8	pass
+Remove Smallest Suffix	oksh	7.9	pass
+Remove Smallest Suffix	osh	0.25.0	pass
+Remove Smallest Suffix	osh	0.26.0	pass
+Remove Smallest Suffix	osh	0.27.0	pass
+Remove Smallest Suffix	osh	0.28.0	pass
+Remove Smallest Suffix	osh	0.29.0	pass
+Remove Smallest Suffix	osh	0.30.0	pass
+Remove Smallest Suffix	osh	0.31.0	pass
+Remove Smallest Suffix	osh	0.32.0	pass
+Remove Smallest Suffix	osh	0.33.0	pass
+Remove Smallest Suffix	osh	0.34.0	pass
+Remove Smallest Suffix	osh	0.35.0	pass
+Remove Smallest Suffix	osh	0.36.0	pass
+Remove Smallest Suffix	osh	0.37.0	pass
+Remove Smallest Suffix	posh	0.12.6	pass
+Remove Smallest Suffix	posh	0.13.2	pass
+Remove Smallest Suffix	posh	0.14.5	pass
+Remove Smallest Suffix	yashrs	0.3.0	pass
+Remove Smallest Suffix	yashrs	0.4.0	pass
+Remove Smallest Suffix	yashrs	0.4.1	pass
+Remove Smallest Suffix	yashrs	0.4.2	pass
+Remove Smallest Suffix	yashrs	0.4.3	pass
+Remove Smallest Suffix	yashrs	0.4.4	pass
+Remove Smallest Suffix	yashrs	0.4.5	pass
+Remove Smallest Suffix	yashrs	3.0.0	pass
+Remove Smallest Suffix	yashrs	3.0.1	pass
+Remove Smallest Suffix	yashrs	3.0.2	pass
+Remove Smallest Suffix	yashrs	3.0.3	pass
+Remove Smallest Suffix	yashrs	3.0.4	pass
+Remove Smallest Suffix	yashrs	3.0.5	pass
+Remove Smallest Suffix	yashrs	3.0.7	pass
+Remove Smallest Suffix	yashrs	3.0.8	pass
+Remove Smallest Suffix	yashrs	3.1.0	pass
+Remove Smallest Suffix	yashrs	3.2.0	pass
+Remove Smallest Suffix	yash	2.10	pass
+Remove Smallest Suffix	yash	2.11	pass
+Remove Smallest Suffix	yash	2.12	pass
+Remove Smallest Suffix	yash	2.13	pass
+Remove Smallest Suffix	yash	2.14	pass
+Remove Smallest Suffix	yash	2.15	pass
+Remove Smallest Suffix	yash	2.16	pass
+Remove Smallest Suffix	yash	2.17	pass
+Remove Smallest Suffix	yash	2.18	pass
+Remove Smallest Suffix	yash	2.19	pass
+Remove Smallest Suffix	yash	2.20	pass
+Remove Smallest Suffix	yash	2.21	pass
+Remove Smallest Suffix	yash	2.22	pass
+Remove Smallest Suffix	yash	2.23	pass
+Remove Smallest Suffix	yash	2.24	pass
+Remove Smallest Suffix	yash	2.25	pass
+Remove Smallest Suffix	yash	2.26.1	pass
+Remove Smallest Suffix	yash	2.27	pass
+Remove Smallest Suffix	yash	2.28	pass
+Remove Smallest Suffix	yash	2.29	pass
+Remove Smallest Suffix	yash	2.30	pass
+Remove Smallest Suffix	yash	2.31	pass
+Remove Smallest Suffix	yash	2.32.1	pass
+Remove Smallest Suffix	yash	2.33.1	pass
+Remove Smallest Suffix	yash	2.34	pass
+Remove Smallest Suffix	yash	2.35	pass
+Remove Smallest Suffix	yash	2.36	pass
+Remove Smallest Suffix	yash	2.37	pass
+Remove Smallest Suffix	yash	2.38	pass
+Remove Smallest Suffix	yash	2.39	pass
+Remove Smallest Suffix	yash	2.40	pass
+Remove Smallest Suffix	yash	2.41	pass
+Remove Smallest Suffix	yash	2.42	pass
+Remove Smallest Suffix	yash	2.43	pass
+Remove Smallest Suffix	yash	2.44	pass
+Remove Smallest Suffix	yash	2.45	pass
+Remove Smallest Suffix	yash	2.46	pass
+Remove Smallest Suffix	yash	2.47	pass
+Remove Smallest Suffix	yash	2.48	pass
+Remove Smallest Suffix	yash	2.49	pass
+Remove Smallest Suffix	yash	2.50	pass
+Remove Smallest Suffix	yash	2.51	pass
+Remove Smallest Suffix	yash	2.52	pass
+Remove Smallest Suffix	yash	2.53	pass
+Remove Smallest Suffix	yash	2.54	pass
+Remove Smallest Suffix	yash	2.55	pass
+Remove Smallest Suffix	yash	2.56.1	pass
+Remove Smallest Suffix	yash	2.57	pass
+Remove Smallest Suffix	yash	2.58.1	pass
+Remove Smallest Suffix	yash	2.59	pass
+Remove Smallest Suffix	yash	2.60	pass
+Remove Smallest Suffix	yash	2.61	pass
+Remove Smallest Suffix	zsh	4.0.9	pass
+Remove Smallest Suffix	zsh	4.2.7	pass
+Remove Smallest Suffix	zsh	5.0.8	pass
+Remove Smallest Suffix	zsh	5.1.1	pass
+Remove Smallest Suffix	zsh	5.2	pass
+Remove Smallest Suffix	zsh	5.3.1	pass
+Remove Smallest Suffix	zsh	5.4.2	pass
+Remove Smallest Suffix	zsh	5.5.1	pass
+Remove Smallest Suffix	zsh	5.6.2	pass
+Remove Smallest Suffix	zsh	5.7.1	pass
+Remove Smallest Suffix	zsh	5.8.1	pass
+Remove Smallest Suffix	zsh	5.9.1	pass

@@ -6,18 +6,14 @@
 
 set -euf
 
-DIRNAME="$(command -v dirname)"
-FIND="$(command -v find)"
-SORT="$(command -v sort)"
-WC="$(command -v wc)"
-ENV="$(command -v env)"
-DIFF="$(command -v diff)"
-SH="$(command -v sh)"
+SD_SELF="$0"
+. "$(cd "$(dirname "$0")" && pwd)/lib.sh"
+sd_init_tools
+ROOT_DIR="$(sd_root_dir "$SD_SELF")"
 
-ROOT_DIR="$(cd "$("$DIRNAME" "$0")" && pwd)"
-TEST_LIST="$("$FIND" "${ROOT_DIR}/tests" -name '*vars.env' | "$SORT")"
-TEST_COUNT="$(echo "$TEST_LIST" | "$WC" -l)"
-TEST_SHELL="${TEST_SHELL:-${SHELL:-$SH}}"
+TEST_LIST="$("$SD_FIND" "${ROOT_DIR}/tests" -name '*vars.env' | "$SD_SORT")"
+TEST_COUNT="$(echo "$TEST_LIST" | "$SD_WC" -l)"
+TEST_SHELL="${TEST_SHELL:-${SHELL:-$SD_SH}}"
 
 test_shell () {
     RUN_COUNT=0
@@ -34,14 +30,14 @@ test_shell () {
             # they don't exist in the PATH, so we need to set it for true, test, printf
             # etc even though the internal builtin version is used anyway. Annoying.
             *yash*)
-                "$ENV" -i PATH=/bin $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
+                "$SD_ENV" -i PATH=/bin $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
                 ;;
             *)
-                "$ENV" -i PATH= $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
+                "$SD_ENV" -i PATH= $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
                 ;;
         esac
 
-        if "$DIFF" -u "${TEST_EXPECTED}" "${TEST_OUTPUT}"
+        if "$SD_DIFF" -u "${TEST_EXPECTED}" "${TEST_OUTPUT}"
         then
             printf 'ok'
             PASS_COUNT=$((PASS_COUNT + 1))
