@@ -22,11 +22,12 @@ Basic Usage
 
 Example:
 
-    eval 'echo' '123'
+    cmd="echo Hello World"
+    eval "$cmd"
 
 Output:
 
-    123
+    Hello World
 
 Compatibility
 -------------

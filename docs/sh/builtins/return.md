@@ -23,14 +23,14 @@ Basic Usage
 Example:
 
     my_func () {
-        return
+        return 2
     }
     my_func
     echo $?
 
 Output:
 
-    0
+    2
 
 Compatibility
 -------------

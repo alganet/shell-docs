@@ -22,12 +22,11 @@ Basic Usage
 
 Example:
 
-    false
-    echo $?
+    false || echo "command failed"
 
 Output:
 
-    1
+    command failed
 
 Compatibility
 -------------

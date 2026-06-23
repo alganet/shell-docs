@@ -22,12 +22,11 @@ Basic Usage
 
 Example:
 
-    true
-    echo $?
+    true && echo "command succeeded"
 
 Output:
 
-    0
+    command succeeded
 
 Compatibility
 -------------
