@@ -18,6 +18,8 @@ This builtin is non-standard but widely available.
 Basic Usage
 -----------
 
+**typeset** declares a variable and optionally assigns it a value:
+
 Example:
 
     typeset name="World"
@@ -29,6 +31,8 @@ Output:
 
 Function Introspection
 ----------------------
+
+With **-f**, **typeset** prints the definition of a named function instead of declaring a variable:
 
 Example:
 

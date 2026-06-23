@@ -18,6 +18,8 @@ set
 Basic Usage
 -----------
 
+**set --** replaces the positional parameters with the given arguments, which then become `$1`, `$2`, and so on:
+
 Example:
 
     set -- one two three
@@ -33,6 +35,8 @@ Output:
 
 Clearing Arguments
 ------------------
+
+With no arguments after `--`, **set** discards all positional parameters, leaving none:
 
 Example:
 

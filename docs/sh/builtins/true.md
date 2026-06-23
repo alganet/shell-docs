@@ -18,6 +18,8 @@ true
 Basic Usage
 -----------
 
+**true** does nothing but set a zero exit status, which is useful as a succeeding condition:
+
 Example:
 
     true

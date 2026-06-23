@@ -20,6 +20,8 @@ Source is an alias to [dot](dot.md) in some shells.
 Basic Usage
 -----------
 
+**source** runs the commands from _file_ in the current shell, so definitions it makes remain in effect afterwards:
+
 Example:
 
     echo 'echo Hello New File' > /tmp/newfile.sh

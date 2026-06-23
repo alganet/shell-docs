@@ -18,6 +18,8 @@ continue
 Basic Usage
 -----------
 
+**continue** skips the rest of the current iteration and jumps to the next one:
+
 Example:
 
     dots='...'

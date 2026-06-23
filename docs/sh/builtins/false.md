@@ -18,6 +18,8 @@ false
 Basic Usage
 -----------
 
+**false** does nothing but set a non-zero exit status, which is useful as a failing condition:
+
 Example:
 
     false

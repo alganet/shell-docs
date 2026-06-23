@@ -18,6 +18,8 @@ pwd
 Basic Usage
 -----------
 
+**pwd** writes the absolute path of the current working directory to standard output:
+
 Example:
 
     cd /

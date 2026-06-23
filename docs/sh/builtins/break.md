@@ -18,6 +18,8 @@ break
 Basic Usage
 -----------
 
+**break** exits the enclosing loop immediately, stopping further iterations:
+
 Example:
 
     dots=''

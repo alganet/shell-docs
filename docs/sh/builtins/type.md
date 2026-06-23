@@ -18,6 +18,8 @@ type
 Basic Usage
 -----------
 
+**type** reports how _name_ would be resolved as a command, such as a builtin, function, alias, or external program:
+
 Example:
 
     case $(type eval) in

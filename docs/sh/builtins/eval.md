@@ -18,6 +18,8 @@ eval
 Basic Usage
 -----------
 
+**eval** joins its arguments into a single string and re-parses that string as a command, allowing constructed commands to run:
+
 Example:
 
     eval 'echo' '123'

@@ -18,6 +18,8 @@ shift
 Basic Usage
 -----------
 
+**shift** discards the first positional parameter, renumbering the rest so `$2` becomes `$1`:
+
 Example:
 
     my_func () {
@@ -32,6 +34,8 @@ Output:
 
 Shift by _N_
 ------------
+
+Given a _count_, **shift** discards that many leading positional parameters at once:
 
 Example:
 

@@ -20,6 +20,8 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Basic Usage
 -----------
 
+**[** evaluates an _expression_ and sets the exit status to success or failure, letting `if` branch on the result:
+
 Example:
 
     if [ 1 = 1 ]

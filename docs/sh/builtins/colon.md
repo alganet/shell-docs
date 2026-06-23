@@ -18,6 +18,8 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Basic Usage
 -----------
 
+**:** does nothing and always returns success, which makes it a useful no-op placeholder:
+
 Example:
 
     echo 123

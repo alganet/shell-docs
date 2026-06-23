@@ -18,6 +18,8 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 Basic Usage
 -----------
 
+**.** runs the commands from _file_ in the current shell, so any variables or functions it defines persist afterwards:
+
 Example:
 
     echo 'echo Hello New File' > /tmp/newfile.sh

@@ -18,6 +18,8 @@ unalias
 Basic Usage
 -----------
 
+**unalias** removes a named alias so the word is no longer expanded:
+
 Example:
 
     [ -n "${BASH_VERSION:-}" ] && shopt -s expand_aliases # bash requires this

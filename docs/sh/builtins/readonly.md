@@ -18,6 +18,8 @@ readonly
 Basic Usage
 -----------
 
+**readonly** marks a variable so later attempts to reassign it fail, protecting its value:
+
 Example:
 
     readonly word=bird

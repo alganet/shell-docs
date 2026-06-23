@@ -18,6 +18,8 @@ wait
 Basic Usage
 -----------
 
+**wait** pauses the shell until a background process finishes and then reports its exit status:
+
 Example:
 
     { echo 1; } &

@@ -18,6 +18,8 @@ test
 Basic Usage
 -----------
 
+**test** evaluates an _expression_ and sets the exit status to success or failure, letting `if` branch on the result:
+
 Example:
 
     if test 1 = 1

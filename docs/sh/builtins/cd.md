@@ -18,6 +18,8 @@ cd
 Basic Usage
 -----------
 
+**cd** changes the shell's working directory to _name_, affecting where later relative paths resolve:
+
 Example:
 
     cd /

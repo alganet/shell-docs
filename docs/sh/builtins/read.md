@@ -18,6 +18,8 @@ read
 Basic Usage
 -----------
 
+**read** consumes one line from standard input and stores it in the named variable:
+
 Example:
 
     read my_var <<@

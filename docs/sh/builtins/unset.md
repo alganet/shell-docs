@@ -18,6 +18,8 @@ unset
 Basic Usage
 -----------
 
+**unset** removes a variable so referencing it afterwards yields an empty value:
+
 Example:
 
     my_var="foo"
@@ -32,6 +34,8 @@ Output:
 
 Unsetting Functions
 -------------------
+
+With **-f**, **unset** removes a function definition rather than a variable:
 
 Example:
 
