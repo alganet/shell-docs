@@ -1,0 +1,303 @@
+#!/bin/sh
+
+# SPDX-FileCopyrightText: 2026 Alexandre Gomes Gaigalas <alganet@gmail.com>
+#
+# SPDX-License-Identifier: ISC
+
+# build — the shell-docs pipeline entrypoint.
+#
+#   ./build extract   docs/      -> tests/                (ephemeral)
+#   ./build run       tests/     -> results/              (ephemeral, needs docker)
+#   ./build collect   results/   -> data/                 (durable, committed ledger)
+#   ./build render    data/      -> docs/ (tables in place)
+#   ./build all       extract, run, collect, render
+#   ./build clean     remove the ephemeral tests/ and results/
+
+set -euf
+
+SD_SELF="$0"
+. "$(cd "$(dirname "$0")" && pwd)/lib.sh"
+sd_init_tools
+ROOT_DIR="$(sd_root_dir "$SD_SELF")"
+
+SD_LEGEND='Legend: trailing `+` still works at newest tested · leading `?` lower bound uncertain (may be older) · `X-Y` worked X through Y then removed · `-` unsupported · `.` untested'
+
+# --- extract -------------------------------------------------------------------
+# Parse each doc into a numbered test (Example -> test.sh, Output -> expected.txt),
+# recording the doc/feature mapping in vars.env. Ported from gen_tests.sh.
+build_extract () {
+    sd_require_nonempty_dir "$ROOT_DIR/docs" docs
+    "$SD_RM" -rf "$ROOT_DIR/tests"
+    "$SD_FIND" "$ROOT_DIR/docs" -name '*.md' | "$SD_SORT" | {
+        # Empty IFS preserves leading whitespace while reading lines; scoped to
+        # this subshell (a pipe's brace group) so it never leaks to other stages.
+        IFS=
+        test_no=1
+        while read -r md_file
+        do
+            section='' ; example='' ; output='' ; last_line=''
+            line_no=0 ; current_h2='' ; current_h2_line=0 ; example_line=0
+            while read -r md_line
+            do
+                line_no=$((line_no + 1))
+                case "$md_line" in
+                    'Example:')
+                        section='example'
+                        example_line=$((line_no + 2))
+                        ;;
+                    'Output:')
+                        section='output'
+                        ;;
+                    '')
+                        case "$section" in
+                            example)
+                                case "$example" in '') ;; *) section='' ;; esac
+                                ;;
+                            output)
+                                case "$output" in
+                                    '') ;;
+                                    *)
+                                        test_nopad=$(printf '%04d' "$test_no")
+                                        test_dir="$ROOT_DIR/tests/$test_nopad"
+                                        "$SD_MKDIR" -p "$test_dir"
+                                        {
+                                            echo "TEST_DOC_FILE='${md_file#$ROOT_DIR/}'"
+                                            echo "TEST_DOC_LINE=$current_h2_line"
+                                            echo "TEST_DOC_EXAMPLE_LINE=$example_line"
+                                            echo "TEST_NAME='$current_h2'"
+                                            echo "TEST_FILE='tests/$test_nopad/test.sh'"
+                                            echo "TEST_EXPECTED='tests/$test_nopad/expected.txt'"
+                                            echo "TEST_OUTPUT='tests/$test_nopad/output.txt'"
+                                        } > "$test_dir/vars.env"
+                                        printf '%s\n' "$example" > "$test_dir/test.sh"
+                                        printf '%s\n' "$output"  > "$test_dir/expected.txt"
+                                        section='' ; example='' ; output=''
+                                        test_no=$((test_no + 1))
+                                        ;;
+                                esac
+                                ;;
+                        esac
+                        ;;
+                    *)
+                        case "$section" in
+                            example) example="${example}${example:+$SD_EOL}${md_line#"    "}" ;;
+                            output)  output="${output}${output:+$SD_EOL}${md_line#"    "}" ;;
+                            '')
+                                if sd_is_h2_underline "$md_line" "$last_line"
+                                then
+                                    current_h2="$last_line"
+                                    current_h2_line=$((line_no - 1))
+                                fi
+                                last_line="$md_line"
+                                ;;
+                        esac
+                        ;;
+                esac
+            done < "$md_file"
+        done
+    }
+    sd_log "extract: wrote $("$SD_FIND" "$ROOT_DIR/tests" -name vars.env | "$SD_WC" -l | "$SD_TR" -d ' ') tests"
+}
+
+# --- run -----------------------------------------------------------------------
+# Run the test suite against every shell version in the docker image.
+build_run () {
+    sd_require_nonempty_dir "$ROOT_DIR/tests" extract
+    command -v docker >/dev/null 2>&1 || sd_die "docker is required for the 'run' stage"
+    "$SD_SH" "$ROOT_DIR/container.sh"
+}
+
+# --- collect -------------------------------------------------------------------
+# Fold the TAP results into the durable ledger, merging with prior knowledge.
+build_collect () {
+    sd_require_nonempty_dir "$ROOT_DIR/results" run
+    tmp="$ROOT_DIR/.collect.tmp"
+    "$SD_RM" -rf "$tmp" ; "$SD_MKDIR" -p "$tmp"
+
+    "$SD_FIND" "$ROOT_DIR/results" -type f -name tap.txt | while read -r tap
+    do
+        token="${tap#*/results/opt/}" ; token="${token%%/*}"
+        shell="$(sd_shell_name "$token")"
+        version="$(sd_shell_version "$token")"
+        sd_tap_parse < "$tap" | while IFS="$SD_TAB" read -r status _num _file docref name
+        do
+            doc="${docref%:*}"
+            rel="${doc#docs/}" ; rel="${rel%.md}.results"
+            st=pass ; test "$status" = 'not ok' && st=fail
+            "$SD_MKDIR" -p "$tmp/${rel%/*}"
+            printf '%s\t%s\t%s\t%s\n' "$name" "$shell" "$version" "$st" >> "$tmp/$rel"
+        done
+    done
+
+    "$SD_FIND" "$tmp" -type f -name '*.results' | while read -r cur
+    do
+        rel="${cur#$tmp/}"
+        "$SD_MKDIR" -p "$ROOT_DIR/data/${rel%/*}"
+        sd_merge_results "$cur" "$ROOT_DIR/data/$rel" | sd_write_ledger "$ROOT_DIR/data/$rel.new"
+        "$SD_MV" -f "$ROOT_DIR/data/$rel.new" "$ROOT_DIR/data/$rel"
+    done
+
+    "$SD_RM" -rf "$tmp"
+    sd_log "collect: ledger has $("$SD_FIND" "$ROOT_DIR/data" -name '*.results' | "$SD_WC" -l | "$SD_TR" -d ' ') docs"
+}
+
+# --- render --------------------------------------------------------------------
+# sd_interval LO HI FIRST LAST -> one interval token.
+sd_interval () {
+    _pre='' ; test "$1" = "$3" && _pre='?'
+    if test "$2" = "$4"
+    then printf '%s%s+' "$_pre" "$1"      # still supported at newest tested
+    elif test "$1" = "$2"
+    then printf '%s%s' "$_pre" "$1"       # worked only at this version, gone after
+    else printf '%s%s-%s' "$_pre" "$1" "$2"
+    fi
+}
+
+# sd_cell FEATURE SHELL LEDGER -> compatibility cell for one (feature, shell).
+sd_cell () {
+    _obs="$(
+        while IFS="$SD_TAB" read -r _f _s _v _st
+        do
+            test "$_f" = "$1" || continue
+            test "$_s" = "$2" || continue
+            printf '%s\t%s\n' "$_v" "$_st"
+        done < "$3" | sd_sort_versions
+    )"
+    test -n "$_obs" || { printf '.' ; return ; }
+    _firstv="${_obs%%"$SD_TAB"*}"
+    _last="${_obs##*"$SD_EOL"}" ; _lastv="${_last%%"$SD_TAB"*}"
+    _cell='' ; _lo='' ; _hi=''
+    _oldifs="${IFS-}" ; IFS="$SD_EOL"
+    for _ln in $_obs
+    do
+        _v="${_ln%%"$SD_TAB"*}" ; _st="${_ln#*"$SD_TAB"}"
+        if test "$_st" = pass
+        then
+            test -n "$_lo" || _lo="$_v"
+            _hi="$_v"
+        elif test -n "$_lo"
+        then
+            _cell="$_cell${_cell:+ }$(sd_interval "$_lo" "$_hi" "$_firstv" "$_lastv")"
+            _lo='' ; _hi=''
+        fi
+    done
+    IFS="$_oldifs"
+    test -z "$_lo" || _cell="$_cell${_cell:+ }$(sd_interval "$_lo" "$_hi" "$_firstv" "$_lastv")"
+    test -n "$_cell" || _cell='-'
+    printf '%s' "$_cell"
+}
+
+# sd_doc_features DOC -> the doc's H2 feature headings, in order, before Compatibility.
+sd_doc_features () {
+    _prev=''
+    while IFS= read -r _line
+    do
+        if sd_is_h2_underline "$_line" "$_prev"
+        then
+            case "$_prev" in Compatibility) return ;; *) printf '%s\n' "$_prev" ;; esac
+        fi
+        _prev="$_line"
+    done < "$1"
+}
+
+# sd_dashes N -> N dash characters.
+sd_dashes () { printf '%*s' "$1" '' | "$SD_SED" 's/ /-/g' ; }
+
+build_render () {
+    sd_require_nonempty_dir "$ROOT_DIR/data" collect
+    shells="$("$SD_FIND" "$ROOT_DIR/data" -name '*.results' -exec "$SD_CAT" {} + |
+        "$SD_GREP" -vE '^#|^[[:space:]]*$' | "$SD_CUT" -f2 | "$SD_SORT" -u)"
+    scratch="$ROOT_DIR/.render.tmp"
+
+    "$SD_FIND" "$ROOT_DIR/docs" -name '*.md' | "$SD_SORT" | while read -r doc
+    do
+        rel="${doc#$ROOT_DIR/docs/}"
+        ledger="$ROOT_DIR/data/${rel%.md}.results"
+        test -f "$ledger" || { sd_log "render: no ledger for $rel, skipping" ; continue ; }
+
+        # Pass 1: compute every cell once, caching it and the column widths.
+        for s in $shells ; do eval "w_$s=${#s}" ; done
+        fw=7   # len("Feature")
+        : > "$scratch"
+        sd_doc_features "$doc" | while IFS= read -r feature
+        do
+            "$SD_CUT" -f1 "$ledger" | "$SD_GREP" -Fxq "$feature" || continue
+            printf 'F\t%s\n' "$feature"
+            for s in $shells
+            do printf 'C\t%s\t%s\n' "$s" "$(sd_cell "$feature" "$s" "$ledger")"
+            done
+        done > "$scratch"
+
+        # widths from the cached cells
+        while IFS="$SD_TAB" read -r kind a b
+        do
+            case "$kind" in
+                F) test ${#a} -le "$fw" || fw=${#a} ;;
+                C) eval "_w=\$w_$a" ; test ${#b} -le "$_w" || eval "w_$a=${#b}" ;;
+            esac
+        done < "$scratch"
+
+        # Pass 2: rewrite the doc — preamble, then the regenerated table + legend.
+        row_open=0
+        {
+            sd_copy_until_compat "$doc" || true
+            printf 'Compatibility\n-------------\n\n'
+            printf '| %-'"$fw"'s ' 'Feature'
+            for s in $shells ; do eval "_w=\$w_$s" ; printf '| %-'"$_w"'s ' "$s" ; done
+            printf '|\n'
+            printf '|:%s:' "$(sd_dashes "$fw")"
+            for s in $shells ; do eval "_w=\$w_$s" ; printf '|:%s:' "$(sd_dashes "$_w")" ; done
+            printf '|\n'
+            while IFS="$SD_TAB" read -r kind a b
+            do
+                case "$kind" in
+                    F)
+                        test "$row_open" = 0 || printf '|\n'
+                        row_open=1
+                        printf '| %-'"$fw"'s ' "$a"
+                        ;;
+                    C) eval "_w=\$w_$a" ; printf '| %-'"$_w"'s ' "$b" ;;
+                esac
+            done < "$scratch"
+            test "${row_open:-0}" = 0 || printf '|\n'
+            printf '\n%s\n' "$SD_LEGEND"
+        } > "$doc.new"
+        "$SD_MV" -f "$doc.new" "$doc"
+    done
+    "$SD_RM" -f "$scratch"
+    sd_log "render: updated compatibility tables"
+}
+
+# sd_copy_until_compat DOC -> print the doc up to (but excluding) its Compatibility
+# heading. Returns 0 if a Compatibility section was found, 1 otherwise.
+sd_copy_until_compat () {
+    _prev='' ; _n=0
+    while IFS= read -r _line
+    do
+        _n=$((_n + 1))
+        if sd_is_h2_underline "$_line" "$_prev" && test "$_prev" = 'Compatibility'
+        then return 0
+        fi
+        test "$_n" -lt 2 || printf '%s\n' "$_prev"
+        _prev="$_line"
+    done < "$1"
+    test "$_n" -lt 1 || printf '%s\n' "$_prev"
+    return 1
+}
+
+# --- clean / all ---------------------------------------------------------------
+build_clean () {
+    "$SD_RM" -rf "$ROOT_DIR/tests" "$ROOT_DIR/results" \
+        "$ROOT_DIR/.collect.tmp" "$ROOT_DIR/.render.tmp"
+    sd_log "clean: removed tests/ results/ scratch (data/ kept)"
+}
+
+build_all () {
+    build_extract
+    build_run
+    build_collect
+    build_render
+}
+
+row_open=0
+build_"${1:-all}"

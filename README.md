@@ -41,23 +41,46 @@ This project is in its infancy. There are some important architectural goals we 
 ### Working
 
 Currently, the project works by taking documentation written by humans and running the example
-code snippets as tests. The current implementation works by:
+code snippets as tests. The pipeline is a single `build` entrypoint with four stages, all
+sharing `lib.sh` (portable sh + coreutils only):
 
-  1. Converting docs written by humans into an in-disk test suite
-  2. Running the test suite against all available shells from https://github.com/alganet/shell-versions
-  3. Examining the test suite failures to generate an in-disk compatibility report
-  4. Appending or editing the compatibility table on the docs accordingly
+  1. `extract` — convert the docs into an on-disk test suite (`tests/`)
+  2. `run` — run the suite against every shell from https://github.com/alganet/shell-versions (`results/`)
+  3. `collect` — fold the TAP results into the durable compatibility ledger (`data/`)
+  4. `render` — rewrite each doc's compatibility table from the ledger
 
-Whole workflow (process docs, run tests, regenerate compat tables)
+The ledger under `data/` is the single durable source of truth: one TAB-delimited
+`feature / shell / version / status` record per observation. It is committed to git, so
+knowledge accumulates across shell-image refreshes — a version that later disappears from the
+image keeps the result we already recorded for it. `tests/` and `results/` are disposable
+scratch and are git-ignored.
 
-    rm -Rf tests/ compat/ results && sh gen_tests.sh && sh container.sh && sh gen_compat.sh && sh regen_docs.sh 
+Compatibility cells are derived honestly from the sparse set of tested versions:
 
-License docs files:
+  * `X+` — works from `X` onward (a lower tested version was observed to fail, so `X` is a
+    confirmed introduction point)
+  * `?X+` — works at `X`, the oldest version we tested; it may well work in older ones we lack
+  * `X-Y` — worked from `X` through `Y`, then stopped (a newer tested version fails)
+  * `-` unsupported in every tested version · `.` no data
+
+Whole workflow (process docs, run tests, regenerate compat tables):
+
+    ./build all
+
+Individual stages: `./build extract`, `./build run`, `./build collect`, `./build render`.
+`./build clean` removes the `tests/` and `results/` scratch (never `data/`).
+
+License newly written docs (GFDL):
 
     reuse annotate --copyright "Alexandre Gomes Gaigalas <alganet@gmail.com>" --license GFDL-1.3-or-later --recursive docs
 
+The `data/` ledger is licensed ISC (it is factual data produced by the ISC tooling). Each
+`.results` file carries its own `# SPDX-...` header, written automatically by `collect`/`render`,
+so it stays REUSE-compliant across regeneration — no `reuse annotate` step is needed for it. Run
+`reuse lint` to check the whole tree.
+
 ## Licensing
 
-Code in this repository is licenced under ISC.
+Code and the `data/` compatibility ledger in this repository are licensed under ISC.
 
 Documentation in this repository is licensed under GFDL-1.3 or later.
