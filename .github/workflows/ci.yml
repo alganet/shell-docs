@@ -11,19 +11,29 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
-    name: Test
+  # Fast, deterministic, no docker: the committed docs must be the faithful
+  # render of the committed data/ ledger. Catches a hand-edited table or a
+  # ledger change that was not re-rendered.
+  docs:
+    name: Docs in sync with ledger
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
-      - run: sh gen_tests.sh
-      - run: sh container.sh
-      - run: sh gen_compat.sh
-      - run: sh regen_docs.sh
-
-      - name: Pass (regen docs === committed docs)
+      - name: Docs parse into a test suite
+        run: ./build extract
+      - name: Render tables from the committed ledger
+        run: ./build render
+      - name: Committed docs must equal the rendered docs
         run: git diff --exit-code docs
+
+  # End-to-end smoke test against the real shells (pulls the shell-versions
+  # image). Verifies the whole pipeline runs to completion; it does not assert
+  # the output equals the committed state, because a fresh run is environment
+  # dependent and merges new observations into the ledger.
+  pipeline:
+    name: Full pipeline (shells)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: extract -> run -> collect -> render
+        run: ./build all
