@@ -20,15 +20,16 @@ Basic Usage
 
 Example:
 
+    cd /tmp
     pwd
-    pushd /tmp
+    pushd /
     pwd
 
 Output:
 
-    /wdir
-    /tmp /wdir
     /tmp
+    / /tmp
+    /
 
 Non-Printing Variant
 --------------------
@@ -37,14 +38,15 @@ Some shells instead provide a non-printing variant of pushd.
 
 Example:
 
+    cd /tmp
     pwd
-    pushd /tmp
+    pushd /
     pwd
 
 Output:
 
-    /wdir
     /tmp
+    /
 
 
 Compatibility

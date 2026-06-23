@@ -20,18 +20,19 @@ Basic Usage
 
 Example:
 
+    cd /tmp
     pwd
-    pushd /tmp >/dev/null 2>&1
+    pushd / >/dev/null 2>&1
     pwd
     popd
     pwd
 
 Output:
 
-    /wdir
     /tmp
-    /wdir
-    /wdir
+    /
+    /tmp
+    /tmp
 
 Non-Printing Variant
 --------------------
@@ -40,17 +41,18 @@ Some shells instead provide a non-printing variant of pushd.
 
 Example:
 
+    cd /tmp
     pwd
-    pushd /tmp >/dev/null 2>&1
+    pushd / >/dev/null 2>&1
     pwd
     popd
     pwd
 
 Output:
 
-    /wdir
     /tmp
-    /wdir
+    /
+    /tmp
 
 Compatibility
 -------------

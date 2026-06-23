@@ -22,13 +22,13 @@ Example:
 
     cd /
     pwd
-    cd /wdir
+    cd /tmp
     pwd
 
 Output:
 
     /
-    /wdir
+    /tmp
 
 Compatibility
 -------------

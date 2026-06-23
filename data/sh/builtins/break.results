@@ -57,10 +57,10 @@ Basic Usage	dash	0.5.10.2	pass
 Basic Usage	dash	0.5.11.5	pass
 Basic Usage	dash	0.5.12	pass
 Basic Usage	dash	0.5.13.4	pass
-Basic Usage	hush	1.19.4	fail
-Basic Usage	hush	1.20.2	fail
-Basic Usage	hush	1.21.1	fail
-Basic Usage	hush	1.22.1	fail
+Basic Usage	hush	1.19.4	pass
+Basic Usage	hush	1.20.2	pass
+Basic Usage	hush	1.21.1	pass
+Basic Usage	hush	1.22.1	pass
 Basic Usage	hush	1.23.2	pass
 Basic Usage	hush	1.24.2	pass
 Basic Usage	hush	1.25.1	pass

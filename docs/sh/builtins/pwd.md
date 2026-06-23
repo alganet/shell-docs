@@ -20,11 +20,12 @@ Basic Usage
 
 Example:
 
+    cd /
     pwd
 
 Output:
 
-    /wdir
+    /
 
 Compatibility
 -------------

@@ -16,11 +16,12 @@ Basic Usage
 
 Example:
 
+    cd /
     echo $PWD
 
 Output:
 
-    /wdir
+    /
 
 Compatibility
 -------------

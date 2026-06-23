@@ -24,9 +24,9 @@ Basic Usage	ash	1.35.0	pass
 Basic Usage	ash	1.36.1	pass
 Basic Usage	ash	1.37.0	pass
 Basic Usage	ash	1.38.0	pass
-Basic Usage	bash	2.01.0	fail
-Basic Usage	bash	2.02.0	fail
-Basic Usage	bash	2.03.0	fail
+Basic Usage	bash	2.01.0	pass
+Basic Usage	bash	2.02.0	pass
+Basic Usage	bash	2.03.0	pass
 Basic Usage	bash	2.04.0	pass
 Basic Usage	bash	2.05a.0	pass
 Basic Usage	bash	2.05b.13	pass

@@ -17,19 +17,19 @@ Basic Usage
 Example:
 
     set -u
-    echo hello
-    { echo $UNSET; } >/dev/null 2>&1
-    echo world
+    echo defined is ok
+    ( echo "$UNDEFINED" ) 2>/dev/null || echo "unset variable is rejected"
 
 Output:
 
-    hello
+    defined is ok
+    unset variable is rejected
 
 Compatibility
 -------------
 
-| Feature     | ash     | bash     | brush | dash    | hush | ksh                        | loksh   | mksh  | oksh  | osh | posh     | yash   | yashrs  | zsh    |
-|:-----------:|:-------:|:--------:|:-----:|:-------:|:----:|:--------------------------:|:-------:|:-----:|:-----:|:---:|:--------:|:------:|:-------:|:------:|
-| Basic Usage | ?1.2.2+ | ?2.01.0+ | -     | ?0.5.3+ | -    | shvrChistory-b_2016-01-10+ | ?6.7.5+ | ?R30+ | ?6.5+ | -   | ?0.12.6+ | ?2.10+ | ?0.3.0+ | 5.0.8+ |
+| Feature     | ash     | bash     | brush  | dash    | hush | ksh                    | loksh   | mksh  | oksh  | osh      | posh     | yash   | yashrs  | zsh     |
+|:-----------:|:-------:|:--------:|:------:|:-------:|:----:|:----------------------:|:-------:|:-----:|:-----:|:--------:|:--------:|:------:|:-------:|:-------:|
+| Basic Usage | ?1.2.2+ | ?2.01.0+ | 0.4.0+ | ?0.5.3+ | -    | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | ?0.25.0+ | ?0.12.6+ | ?2.10+ | ?0.3.0+ | ?4.0.9+ |
 
 Legend: trailing `+` still works at newest tested · leading `?` lower bound uncertain (may be older) · `X-Y` worked X through Y then removed · `-` unsupported · `.` untested

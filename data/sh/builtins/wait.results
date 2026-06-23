@@ -153,10 +153,10 @@ Basic Usage	oksh	7.6	pass
 Basic Usage	oksh	7.7	pass
 Basic Usage	oksh	7.8	pass
 Basic Usage	oksh	7.9	pass
-Basic Usage	osh	0.25.0	fail
-Basic Usage	osh	0.26.0	fail
-Basic Usage	osh	0.27.0	fail
-Basic Usage	osh	0.28.0	fail
+Basic Usage	osh	0.25.0	pass
+Basic Usage	osh	0.26.0	pass
+Basic Usage	osh	0.27.0	pass
+Basic Usage	osh	0.28.0	pass
 Basic Usage	osh	0.29.0	pass
 Basic Usage	osh	0.30.0	pass
 Basic Usage	osh	0.31.0	pass
