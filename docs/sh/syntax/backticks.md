@@ -18,6 +18,9 @@ Backtick Expansion
 Basic Usage
 -----------
 
+Text inside backticks is run as a command and replaced by its output — the
+older equivalent of `$(...)`.
+
 Example:
 
     echo `echo Hello World`

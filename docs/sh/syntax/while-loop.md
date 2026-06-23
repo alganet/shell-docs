@@ -18,6 +18,8 @@ While Loop
 Basic Usage
 -----------
 
+The loop runs its body repeatedly until the `test` condition stops succeeding.
+
 Example:
 
     c=.

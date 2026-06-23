@@ -18,6 +18,9 @@ noglob
 Basic Usage
 -----------
 
+`set -f` turns off pathname expansion, so a pattern such as `my-dir/*` is left
+literal instead of matching files; `set +f` turns it back on.
+
 Example:
 
     /bin/rm -rf my-dir
@@ -36,6 +39,9 @@ Output:
 
 Quoted pattern is unchanged
 ---------------------------
+
+A quoted pattern is never subject to pathname expansion in the first place, so
+quoting has the same effect as `set -f` for that word.
 
 Example:
 

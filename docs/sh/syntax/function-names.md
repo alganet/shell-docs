@@ -18,6 +18,9 @@ Function Names
 Basic Usage
 -----------
 
+A function groups commands under a `name ()` definition that is then invoked
+like any other command.
+
 Example:
 
     my_name () { echo 123; }
@@ -29,6 +32,9 @@ Output:
 
 Hyphenated Names
 ----------------
+
+POSIX only requires names made of letters, digits and underscores, but several
+shells also accept hyphens in a function name.
 
 Example:
 

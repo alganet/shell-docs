@@ -18,6 +18,9 @@ nounset
 Basic Usage
 -----------
 
+With `set -u`, expanding an unset variable is an error rather than an empty
+string; here that failure is contained in a subshell and caught.
+
 Example:
 
     set -u

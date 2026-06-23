@@ -18,6 +18,9 @@ $LINENO variable
 Basic Usage
 -----------
 
+`$LINENO` expands to the number of the line on which it appears within the
+current script.
+
 Example:
 
     echo $LINENO

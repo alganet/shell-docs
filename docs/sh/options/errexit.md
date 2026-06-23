@@ -18,6 +18,9 @@ errexit
 Basic Usage
 -----------
 
+With `set -e` the shell exits as soon as a command fails, so `world` is never
+reached once `cause_err` returns non-zero.
+
 Example:
 
     cause_err () { return 1; }

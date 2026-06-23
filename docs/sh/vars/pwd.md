@@ -18,6 +18,8 @@ $PWD variable
 Basic Usage
 -----------
 
+`$PWD` always holds the current working directory, updated by every `cd`.
+
 Example:
 
     cd /

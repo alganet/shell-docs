@@ -18,6 +18,9 @@ Tilde Expansion
 Basic Usage
 -----------
 
+An unquoted `~` at the start of a word expands to the current user's home
+directory, taken from `$HOME`.
+
 Example:
 
     HOME=/home/user

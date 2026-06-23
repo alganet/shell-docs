@@ -18,6 +18,9 @@ $IFS variable
 Basic Usage
 -----------
 
+`$IFS` holds the characters the shell splits unquoted expansions on. With it set
+to `-`, the unquoted `$@` is broken into separate words wherever a dash appears.
+
 Example:
 
     IFS='-'

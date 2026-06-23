@@ -18,6 +18,9 @@ Arithmetic Expansion
 Basic Usage
 -----------
 
+`$(( ))` evaluates the enclosed integer expression, with the usual C operator
+precedence, and substitutes the result.
+
 Example:
 
     echo $((4 * 3 / 2 + 1 - 0))
@@ -28,6 +31,9 @@ Output:
 
 Square Bracket Syntax
 ---------------------
+
+`$[ ]` is an obsolete, non-portable form of arithmetic expansion. Prefer
+`$(( ))`; this is shown only to document where the old form still works.
 
 Example:
 
