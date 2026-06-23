@@ -49,6 +49,20 @@ sharing `lib.sh` (portable sh + coreutils only):
   3. `collect` — fold the TAP results into the durable compatibility ledger (`data/`)
   4. `render` — rewrite each doc's compatibility table from the ledger
 
+Each example runs in a **fresh empty directory** under a **minimal, uniform environment** —
+`env -i HOME=/home/shelldocs PATH=/bin:/usr/bin` for every shell — and only the example's
+**standard output** is compared against its `Output:` block (stderr is discarded). This keeps
+results reproducible (no stray files for an unquoted `*` to match) and consistent across shells.
+
+Two consequences for writing examples:
+
+  * **Be self-contained.** Don't assume a starting directory or environment — `cd` to a known
+    path, or set `HOME`, inside the example if it matters.
+  * **Normalize varying diagnostics with familiar shell, not magic.** Error wording differs
+    wildly between shells, so don't try to match it. Test the *exit status* of a contained
+    failure instead, e.g. `( readonly_var=x ) 2>/dev/null || echo "it is read-only"`. To show a
+    diagnostic on purpose, opt into it with an explicit `2>&1` in the example.
+
 The ledger under `data/` is the single durable source of truth: one TAB-delimited
 `feature / shell / version / status` record per observation. It is committed to git, so
 knowledge accumulates across shell-image refreshes — a version that later disappears from the

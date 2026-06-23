@@ -24,20 +24,22 @@ test_shell () {
     do
         RUN_COUNT=$((RUN_COUNT + 1))
         . "${TEST_ENV}"
-        cd "$ROOT_DIR"
-        case "$TEST_SHELL" in
-            # yash has some weird behavior that makes builtins unavailable if
-            # they don't exist in the PATH, so we need to set it for true, test, printf
-            # etc even though the internal builtin version is used anyway. Annoying.
-            *yash*)
-                "$SD_ENV" -i PATH=/bin $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
-                ;;
-            *)
-                "$SD_ENV" -i PATH= $TEST_SHELL "$TEST_FILE" > "${TEST_OUTPUT}" 2>&1 || true
-                ;;
-        esac
 
-        if "$SD_DIFF" -u "${TEST_EXPECTED}" "${TEST_OUTPUT}"
+        # Run in a fresh empty directory so unquoted globs in an example cannot
+        # match repo files (keeps results reproducible). A uniform, minimal
+        # environment is given to every shell: HOME so tilde expansion works, and
+        # a real PATH so absolute-path coretools resolve and yash's semi-special
+        # builtins (printf, test, ...) stay enabled. Only stdout is captured;
+        # examples opt into stderr with their own redirections.
+        _wd="$("$SD_MKTEMP" -d)"
+        (
+            cd "$_wd" &&
+            "$SD_ENV" -i HOME=/home/shelldocs PATH=/bin:/usr/bin \
+                $TEST_SHELL "$ROOT_DIR/$TEST_FILE" > "$ROOT_DIR/$TEST_OUTPUT" 2>/dev/null
+        ) || true
+        "$SD_RM" -rf "$_wd"
+
+        if "$SD_DIFF" -u "$ROOT_DIR/$TEST_EXPECTED" "$ROOT_DIR/$TEST_OUTPUT"
         then
             printf 'ok'
             PASS_COUNT=$((PASS_COUNT + 1))

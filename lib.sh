@@ -46,7 +46,7 @@ sd_die () { printf '%s\n' "shell-docs: error: $*" >&2 ; exit 1 ; }
 # sd_init_tools — resolve every external tool into SD_<NAME>, dying by name if one
 # is missing. Replaces the per-script "X=$(command -v x)" blocks.
 sd_init_tools () {
-    for _sd_t in cat chmod cut diff dirname env find grep head mkdir mv rm sed sort touch tr wc sh
+    for _sd_t in cat chmod cut diff dirname env find grep head mkdir mktemp mv rm sed sort touch tr wc sh
     do
         _sd_p="$(command -v "$_sd_t")" || sd_die "required tool not found: $_sd_t"
         eval "SD_$(printf '%s' "$_sd_t" | tr 'a-z' 'A-Z')=\$_sd_p"
