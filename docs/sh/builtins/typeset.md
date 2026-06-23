@@ -13,6 +13,8 @@ typeset
 
 This builtin is non-standard but widely available.
 
+[ksh Specification](https://cdesktopenv.sourceforge.io/man1/ksh.html#sect35)
+
 Basic Usage
 -----------
 

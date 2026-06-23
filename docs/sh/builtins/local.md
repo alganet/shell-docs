@@ -13,6 +13,8 @@ local
 
 This builtin is non-standard but widely available.
 
+[POSIX (unspecified behavior)](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_09_01_04)
+
 Basic Usage
 -----------
 
