@@ -11,6 +11,7 @@
 #   ./build collect   results/   -> data/                 (durable, committed ledger)
 #   ./build render    data/      -> docs/ (tables in place)
 #   ./build all       extract, run, collect, render
+#   ./build changes   re-show the last collect's recoveries / new failures
 #   ./build clean     remove the ephemeral tests/ and results/
 
 set -euf
@@ -113,6 +114,7 @@ build_collect () {
     sd_require_nonempty_dir "$ROOT_DIR/results" run
     tmp="$ROOT_DIR/.collect.tmp"
     "$SD_RM" -rf "$tmp" ; "$SD_MKDIR" -p "$tmp"
+    sd_ledger_snapshot "$ROOT_DIR/data" > "$tmp/old.snap"
 
     "$SD_FIND" "$ROOT_DIR/results" -type f -name tap.txt | while read -r tap
     do
@@ -137,8 +139,33 @@ build_collect () {
         "$SD_MV" -f "$ROOT_DIR/data/$rel.new" "$ROOT_DIR/data/$rel"
     done
 
+    # Report what this build changed versus the pre-merge ledger.
+    sd_ledger_snapshot "$ROOT_DIR/data" > "$tmp/new.snap"
+    sd_ledger_changes "$tmp/old.snap" "$tmp/new.snap" > "$tmp/changes"
+    "$SD_CAT" "$tmp/changes" > "$ROOT_DIR/results/changes.tsv"
+    _rec=$("$SD_GREP" -c '^recovered' "$tmp/changes" || true)
+    _reg=$("$SD_GREP" -c '^regressed' "$tmp/changes" || true)
+    _new=$("$SD_GREP" -c '^new'       "$tmp/changes" || true)
+    if test "$_rec" = 0 && test "$_reg" = 0 && test "$_new" = 0
+    then sd_log "collect: no changes since the last build"
+    else
+        sd_log "collect: $_rec recovered, $_reg regressed, $_new new failures (results/changes.tsv)"
+        "$SD_GREP" -E '^(recovered|regressed)' "$tmp/changes" | sd_format_changes
+        if test "$_new" -gt 0 && test "$_new" -le 25
+        then "$SD_GREP" '^new' "$tmp/changes" | sd_format_changes
+        fi
+    fi
+
     "$SD_RM" -rf "$tmp"
     sd_log "collect: ledger has $("$SD_FIND" "$ROOT_DIR/data" -name '*.results' | "$SD_WC" -l | "$SD_TR" -d ' ') docs"
+}
+
+# --- changes -------------------------------------------------------------------
+# Re-show the recoveries / new failures recorded by the last collect.
+build_changes () {
+    _cf="$ROOT_DIR/results/changes.tsv"
+    test -f "$_cf" || sd_die "no change record at results/changes.tsv — run 'collect' first"
+    test -s "$_cf" && sd_format_changes < "$_cf" || sd_log "changes: none recorded"
 }
 
 # --- render --------------------------------------------------------------------

@@ -46,7 +46,7 @@ sd_die () { printf '%s\n' "shell-docs: error: $*" >&2 ; exit 1 ; }
 # sd_init_tools — resolve every external tool into SD_<NAME>, dying by name if one
 # is missing. Replaces the per-script "X=$(command -v x)" blocks.
 sd_init_tools () {
-    for _sd_t in cat chmod cut diff dirname env find grep head mkdir mktemp mv rm sed sort touch tr wc sh
+    for _sd_t in cat chmod comm cut diff dirname env find grep head mkdir mktemp mv rm sed sort touch tr wc sh
     do
         _sd_p="$(command -v "$_sd_t")" || sd_die "required tool not found: $_sd_t"
         eval "SD_$(printf '%s' "$_sd_t" | tr 'a-z' 'A-Z')=\$_sd_p"
@@ -121,4 +121,42 @@ sd_merge_results () {
 # header prepended.
 sd_write_ledger () {
     { printf '%s\n\n' "$SD_LEDGER_HEADER" ; "$SD_CAT" ; } > "$1"
+}
+
+# sd_ledger_snapshot <data_dir> — emit every ledger record as
+#   doc<TAB>feature<TAB>shell<TAB>version<TAB>status
+# sorted. The doc prefix disambiguates feature names that repeat across docs (e.g.
+# "Basic Usage"). Headers/blanks are dropped. Empty/absent dir -> empty output.
+sd_ledger_snapshot () {
+    test -d "$1" || return 0
+    "$SD_FIND" "$1" -name '*.results' | while read -r _sd_f
+    do
+        _sd_doc="${_sd_f#"$1"/}" ; _sd_doc="${_sd_doc%.results}"
+        sd_ledger_data "$_sd_f" | "$SD_SED" "s#^#${_sd_doc}${SD_TAB}#"
+    done | "$SD_SORT"
+}
+
+# sd_ledger_changes <old_snapshot> <new_snapshot> — emit one line per status change:
+#   recovered|regressed|new<TAB>doc<TAB>feature<TAB>shell<TAB>version
+# The merge keeps every prior key, so an old-only record is a flip (binary status):
+# old-only fail -> recovered (fail->pass), old-only pass -> regressed (pass->fail).
+# A new-only fail whose (doc,feature,shell,version) key was absent from old is "new".
+sd_ledger_changes () {
+    _sd_d="$("$SD_MKTEMP" -d)"
+    "$SD_COMM" -23 "$1" "$2" > "$_sd_d/oldonly"
+    "$SD_COMM" -13 "$1" "$2" > "$_sd_d/newonly"
+    "$SD_GREP" "${SD_TAB}fail$" "$_sd_d/oldonly" | "$SD_SED" "s/${SD_TAB}fail\$//; s/^/recovered${SD_TAB}/"
+    "$SD_GREP" "${SD_TAB}pass$" "$_sd_d/oldonly" | "$SD_SED" "s/${SD_TAB}pass\$//; s/^/regressed${SD_TAB}/"
+    "$SD_CUT" -f1-4 "$1" | "$SD_SORT" -u > "$_sd_d/oldkeys"
+    "$SD_GREP" "${SD_TAB}fail$" "$_sd_d/newonly" | "$SD_CUT" -f1-4 | "$SD_SORT" -u > "$_sd_d/newfailkeys"
+    "$SD_COMM" -23 "$_sd_d/newfailkeys" "$_sd_d/oldkeys" | "$SD_SED" "s/^/new${SD_TAB}/"
+    "$SD_RM" -rf "$_sd_d"
+}
+
+# sd_format_changes — read change records (type<TAB>doc<TAB>feature<TAB>shell<TAB>version)
+# on stdin and print them human-readably, one per line.
+sd_format_changes () {
+    while IFS="$SD_TAB" read -r _sd_t _sd_d _sd_f _sd_s _sd_v
+    do printf '  %-9s %s :: %s  (%s %s)\n' "$_sd_t" "$_sd_d" "$_sd_f" "$_sd_s" "$_sd_v"
+    done
 }

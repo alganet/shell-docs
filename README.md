@@ -46,7 +46,9 @@ sharing `lib.sh` (portable sh + coreutils only):
 
   1. `extract` — convert the docs into an on-disk test suite (`tests/`)
   2. `run` — run the suite against every shell from https://github.com/alganet/shell-versions (`results/`)
-  3. `collect` — fold the TAP results into the durable compatibility ledger (`data/`)
+  3. `collect` — fold the TAP results into the durable compatibility ledger (`data/`), and
+     report what changed versus the previous ledger: **recoveries** (fail→pass), **regressions**
+     (pass→fail) and **new** failures. `./build changes` re-prints the last build's report.
   4. `render` — rewrite each doc's compatibility table from the ledger
 
 Each example runs in a **fresh empty directory** under a **minimal, uniform environment** —
