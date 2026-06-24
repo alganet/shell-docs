@@ -44,6 +44,35 @@ Output:
 
     foo(){true}
 
+Integer
+-------
+
+With **-i**, the variable holds an integer and an arithmetic expression on the right of an assignment is evaluated. Support for the attribute varies between shells.
+
+Example:
+
+    typeset -i n
+    n=2+3
+    echo $n
+
+Output:
+
+    5
+
+Export
+------
+
+With **-x**, **typeset** also marks the variable for export, so child processes inherit it.
+
+Example:
+
+    typeset -x V=exported
+    /bin/sh -c 'echo $V'
+
+Output:
+
+    exported
+
 Compatibility
 -------------
 
@@ -51,5 +80,7 @@ Compatibility
 |:----------------------:|:---:|:--------:|:--------:|:----:|:----:|:----------------------:|:-------:|:-----:|:-----:|:--------:|:----:|:------:|:-------:|:-------:|
 | Basic Usage            | -   | ?2.01.0+ | ?0.2.23+ | -    | -    | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | ?0.25.0+ | -    | ?2.10+ | ?0.3.0+ | ?4.0.9+ |
 | Function Introspection | -   | ?2.01.0+ | ?0.2.23+ | -    | -    | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | 0.30.0+  | -    | -      | -       | ?4.0.9+ |
+| Integer                | -   | ?2.01.0+ | -        | -    | -    | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | -        | -    | -      | -       | ?4.0.9+ |
+| Export                 | -   | ?2.01.0+ | ?0.2.23+ | -    | -    | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | ?0.25.0+ | -    | ?2.10+ | ?0.3.0+ | ?4.0.9+ |
 
 Legend: trailing `+` still works at newest tested · leading `?` lower bound uncertain (may be older) · `X-Y` worked X through Y then removed · `-` unsupported · `.` untested
