@@ -133,6 +133,33 @@ Output:
 
     example
 
+String Length
+-------------
+
+`${#param}` expands to the number of characters in the value of `param`.
+
+Example:
+
+    s=hello
+    echo ${#s}
+
+Output:
+
+    5
+
+Error If Unset
+--------------
+
+`${param:?}` aborts the shell with an error if `param` is unset or empty, instead of expanding to nothing.
+
+Example:
+
+    ( echo "${missing:?}" ) 2>/dev/null || echo caught
+
+Output:
+
+    caught
+
 Compatibility
 -------------
 
@@ -146,5 +173,7 @@ Compatibility
 | Remove Largest Prefix  | ?1.2.2+ | ?2.01.0+ | ?0.2.23+ | ?0.5.3+ | ?1.19.4+ | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | ?0.25.0+ | ?0.12.6+ | ?2.10+ | ?0.3.0+ | ?4.0.9+ |
 | Remove Smallest Suffix | ?1.2.2+ | ?2.01.0+ | ?0.2.23+ | ?0.5.3+ | ?1.19.4+ | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | ?0.25.0+ | ?0.12.6+ | ?2.10+ | ?0.3.0+ | ?4.0.9+ |
 | Remove Largest Suffix  | ?1.2.2+ | ?2.01.0+ | ?0.2.23+ | ?0.5.3+ | ?1.19.4+ | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | ?0.25.0+ | ?0.12.6+ | ?2.10+ | ?0.3.0+ | ?4.0.9+ |
+| String Length          | ?1.2.2+ | ?2.01.0+ | ?0.2.23+ | ?0.5.3+ | ?1.19.4+ | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | ?0.25.0+ | ?0.12.6+ | ?2.10+ | ?0.3.0+ | ?4.0.9+ |
+| Error If Unset         | ?1.2.2+ | 2.05a.0+ | 0.4.0+   | ?0.5.3+ | ?1.19.4+ | ?shvrA93uplusm-v1.0.1+ | ?6.7.5+ | ?R30+ | ?6.5+ | ?0.25.0+ | ?0.12.6+ | ?2.10+ | ?0.3.0+ | ?4.0.9+ |
 
 Legend: trailing `+` still works at newest tested · leading `?` lower bound uncertain (may be older) · `X-Y` worked X through Y then removed · `-` unsupported · `.` untested
